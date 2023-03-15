@@ -1,0 +1,16 @@
+{
+    "extends": "@tsconfig/node18/tsconfig.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ],
+}

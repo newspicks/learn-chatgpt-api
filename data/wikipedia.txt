@@ -1,0 +1,674 @@
+'''人工知能'''（じんこうちのう）または'''アーティフィシャル・インテリジェンス'''（{{lang-en-short|artificial intelligence}}）、'''AI'''（エーアイ）とは、「『[[計算]]（{{en|computation}}）』という概念と『[[コンピュータ]]（{{en|computer}}）』という道具を用いて『[[知能]]』を研究する[[計算機科学]]（{{en|computer science}}）の一分野」を指す語{{sfn|佐藤|2018|p=「人工知能」}}。<!--[[計算機科学]]（{{lang-en-short|computer science}}）の一分野--><!--このようにlang-en-shortを使うと「計算機科学（英: computer science）の一分野」と表示されるが、出典{{sfn|佐藤|2018|p=「人工知能」}}の原文は「計算機科学（computer science）の一分野」。-->「[[言語]]の[[理解]]や[[推論]]、[[問題解決]]などの知的[[行動]]を[[人間]]に代わってコンピューターに行わせる[[技術]]」{{sfn|ASCII.jp|2018|p=「人工知能」}}、または、「[[計算機]]（コンピュータ）による知的な[[情報処理システム]]の[[設計]]や実現に関する[[研究]]分野」ともされる{{sfn|桃内|2017|p=「人工知能」}}。大学でAI教育研究は、[[情報工学科]]{{sfn|人工知能学会|1997|p=797 (145)}}{{sfn|東京大学 工学部 電子情報工学科|2021|p=「電子情報工学科」}}{{sfn|東京大学 工学部 機械情報工学科|2021|p=「機械情報工学科」}}や[[情報理工学科]][[コンピュータ科学]]専攻などの組織で行われている{{sfn|人工知能学会|1997|p=797 (145)}}{{sfn|東京大学 理学部 情報科学科|東京大学大学院 情報理工学系研究科 コンピュータ科学専攻|2021|p=「人工知能と機械学習」}}（[[工学]]〔エンジニアリング〕とは、数学・化学・物理学などの基礎科学を[[工業]]生産に応用する学問{{sfn|北原|2010|p=2033}}{{efn|[[電子情報通信学会]]で工学博士の[[仙石正和]]が述べた定義では、「工学（Engineering）」とは「[[数学]]，[[自然科学]]の知識を用いて，健康と安全を守り，文化的，社会的及び環境的な考慮を行い，人類のために（for the benefit of humanity），[[設計]]，[[開発]]，[[イノベーション]]または解決を行う活動」だとされている{{sfn|仙石|2017|p=435}}。}}）。
+
+『[[日本大百科全書]](ニッポニカ)』の解説で、[[情報工学]]者・通信工学者の佐藤理史は次のように述べている{{sfn|佐藤|2018|p=「人工知能」}}。
+{{Cquote|誤解を恐れず平易にいいかえるならば、「これまで人間にしかできなかった知的な行為（[[認識]]、推論、言語運用、創造など）を、どのような手順（[[アルゴリズム]]）とどのような[[データ]]（事前情報や知識）を準備すれば、それを機械的に実行できるか」を研究する分野である{{sfn|佐藤|2018|p=「人工知能」}}。|}}
+
+[[ビル・ゲイツ]]や[[イーロン・マスク]]、[[スティーブン・ホーキング]]などの[[専門家]]や[[著名人]]の多くが[[人類滅亡]]の可能性を含む、人工知能の将来的な危険性を指摘している<ref>
+Leaders' concerns about the existential risks of AI:
+* {{harvtxt|Rawlinson|2015}}
+* {{Harvtxt|Holley|2015}}
+* {{Harvtxt|Gibbs|2014}}
+* {{harvtxt|Churm|2019}}
+* {{harvtxt|Sainato|2015}}
+</ref>。
+
+== 概要 ==
+人間の知的能力をコンピュータ上で実現する、様々な技術・[[ソフトウェア]]・[[コンピュータシステム]]<ref name=ITyougo>[[講談社]]（2017）「[https://kotobank.jp/word/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-4702#T.E7.94.A8.E8.AA.9E.E3.81.8C.E3.82.8F.E3.81.8B.E3.82.8B.E8.BE.9E.E5.85.B8 人工知能]」『IT用語がわかる辞典』、朝日新聞社・VOYAGE GROUP</ref>。応用例としては、[[自然言語処理]]（[[機械翻訳]]・[[かな漢字変換]]・[[構文解析]]・[[形態素解析]]等）<ref>講談社（2017）「[https://kotobank.jp/word/%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86-4232#T.E7.94.A8.E8.AA.9E.E3.81.8C.E3.82.8F.E3.81.8B.E3.82.8B.E8.BE.9E.E5.85.B8 自然言語処理]」『IT用語がわかる辞典』、朝日新聞社・VOYAGE GROUP</ref><ref name=":2">{{Cite web|title=「どんな文章も3行に要約するAI」デモサイト、東大松尾研発ベンチャーが公開 「正確性は人間に匹敵」|url=https://www.itmedia.co.jp/news/articles/2108/26/news134.html|website=ITmedia NEWS|accessdate=2021-09-02|language=ja}}</ref>、専門家の推論・判断を模倣する[[エキスパートシステム]]、画像データを解析し特定の[[パターン]]を検出・抽出する[[画像認識]]等がある<ref name=ITyougo/>。
+
+[[2012年]]以降、[[AlexNet|Alexnet]]の登場で画像処理における[[ディープラーニング]]の有用性が競技会で世界的に認知され、急速に研究が活発となり、第3次人工知能ブームが到来<ref>{{Cite web|url=http://enterprisezine.jp/article/detail/6471?p=2|title=【第四回】今、最も熱いディープラーニングを体験してみよう（2ページ）|publisher=エンタープライズ|date=2015-1-14|accessdate=2015-5-30}}</ref>。2016年から2017年にかけて、ディープラーニングと強化学習([[Q学習]])を導入したAIが[[完全情報ゲーム]]である[[囲碁]]などのトップ棋士、さらに不完全情報ゲームである[[ポーカー]]の世界トップクラスのプレイヤーも破り<ref>{{Cite web|url=https://www.gizmodo.jp/2017/02/ai-won-against-poker-pro.html|title=今度はポーカーでAIが人間を超える！ その重要な意味とは?|publisher=[[ギズモード]]|date=2017-02-01|accessdate=2018-02-07}}</ref><ref>{{Cite web|url=https://gigazine.net/news/20170413-ai-poker-beat-man/|title=「AI対ヒト」のポーカー対決で人工知能が再び勝利、6人を相手に5日間の戦いを制して3000万円ゲット|publisher=[[GIGAZINE]]|date=2017-04-13|accessdate=2018-2-07}}</ref>、[[麻雀]]では「Microsoft Suphx（Super Phoenix）」がオンライン対戦サイト「[[天鳳 (オンラインゲーム)|天鳳]]」でAIとして初めて十段に到達する<ref>{{Cite web|title=麻雀 AI Microsoft Suphx が人間のトッププレイヤーに匹敵する成績を達成|url=https://news.microsoft.com/ja-jp/2019/08/29/190829-mahjong-ai-microsoft-suphx/|website=News Center Japan|date=2019-08-29|accessdate=2021-09-02|language=ja-JP}}</ref>など最先端技術として注目されている<ref>{{Cite web|title=ゲーム AI の進化と歴史|url=https://news.microsoft.com/ja-jp/2019/08/19/190819-evolution-and-history-of-game-ai/|website=News Center Japan|date=2019-08-19|accessdate=2021-09-02|language=ja-JP}}</ref>。第3次人工知能ブームの主な革命は、自然言語処理、センサーによる画像処理など視覚的側面が特に顕著であるが、社会学、倫理学、技術開発、経済学などの分野にも大きな影響を及ぼしている<ref>{{Cite web |title=https://www.coursera.org/lecture/ai-business-future-of-work/ai-transformation-with-fredrik-heintz-ruLaF |url=https://www.coursera.org/lecture/ai-business-future-of-work/ai-transformation-with-fredrik-heintz-ruLaF |website=Coursera |access-date=2022-12-27 |language=ja}}</ref>。
+
+== 応用 ==
+=== 文化的・芸術的な応用事例 ===
+音楽分野においては、既存の曲を学習することで、特定の作曲家の作風を真似て作曲する[[自動作曲]]ソフトが登場している。また{{仮リンク|リズムゲーム|en|Rhythm game}}に使われるタッチ位置を示した譜面を楽曲から自動生成するなど分野に特化したシステムも開発されている<ref>{{Cite web|title=音ゲーの“譜面”作りをAIで高速化 KLabが「スクスタ」で活用、所要時間を半分に|url=https://www.itmedia.co.jp/news/articles/2108/30/news088.html|website=ITmedia NEWS|accessdate=2021-09-01|language=ja}}</ref>。
+
+絵画分野においては、コンセプトアート用背景やアニメーションの[[動画 (アニメーション)|中割]]の自動生成、、モノクロ[[漫画]]の自動彩色など、人間の作業を補助するAIが実現している<ref>{{Cite web|title=NVIDIA Canvas: AI のパワーを活用する|url=https://www.nvidia.com/ja-jp/studio/canvas/|website=NVIDIA|accessdate=2021-07-10|language=ja-jp}}</ref><ref>{{Cite web|title=「アニメの絵を自動で描く」AIが出現――アニメーターの仕事は奪われるのか？|url=https://www.itmedia.co.jp/business/articles/1910/21/news029.html|website=ITmedia ビジネスオンライン|accessdate=2021-07-10|language=ja}}</ref><ref>{{Cite web|title=漫画のカラー化、AIが肩代わり 精度100％ではなくても有用なワケ|url=https://www.itmedia.co.jp/news/articles/2109/22/news070.html|website=ITmedia NEWS|accessdate=2021-11-08|language=ja}}</ref>。AIに自然言語で指定したイラスト生成させるサービス（[[Stable Diffusion]]など）も登場している<ref name=":3">{{Cite web |title=「神絵が1分で生成される」 画像生成AI「Midjourney」が話題 |url=https://www.itmedia.co.jp/news/articles/2208/02/news124.html |website=ITmedia NEWS |access-date=2022-08-03 |language=ja}}</ref>。このような人工知能を利用して制作された絵画は「[[人工知能アート]]（Artificial intelligence art）」と呼ばれているが、教師データとして利用された[[著作物]]の[[知的財産]]権などを巡り、深刻な懸念が広がっている<ref name="technologyreview"/>。
+
+将棋AIは人間同士・AI同士の対局から学習して新しい戦法を生み出しているが、プロ棋士（人間）の感覚では不可解ながら実際に指すと有用であるという<ref name="or1" />。
+
+人工知能による人類絶滅の危険を懸念する声が存在するが<ref name=":6" /><ref name=":7" /><ref name=":8" />{{sfn|Geraci|2012|pp=1-2}}{{sfn|Geraci|2012|p=64}}、一方で平和を促進するための文化的な応用も存在する<ref name=":9">{{Cite web |title=Artificial Intelligence for peacebuilding - Opportunities & Challenges |url=https://www.visionofhumanity.org/artificial-intelligence-as-a-tool-for-peace/ |website=Vision of Humanity |date=2022-12-09 |access-date=2022-12-23 |language=en-US |first=Puja |last=Pandit}}</ref>。
+
+=== 児童保護に関する応用事例 ===
+子どものネット上の安全に人工知能を入れることは、国連や欧州連合で継続的に注目されている<ref>{{Cite web |title=Policy guidance on AI for children |url=https://www.unicef.org/globalinsight/reports/policy-guidance-ai-children |website=www.unicef.org |access-date=2022-12-27 |language=en}}</ref><ref>{{Cite web |title=https://www.coursera.org/lecture/ai-business-future-of-work/child-rights-risks-with-johan-grundstrom-eriksson-OfH4E |url=https://www.coursera.org/lecture/ai-business-future-of-work/child-rights-risks-with-johan-grundstrom-eriksson-OfH4E |website=Coursera |access-date=2022-12-27 |language=ja}}</ref>。
+
+=== 医療に関する応用事例 ===
+医療現場ではAIが多く活用されており、最も早く導入されたのは画像診断と言われている。レントゲンやMRI画像の異常部分を検知することで、病気の見逃し発見と早期発見に役立っている。また、AIがカルテの記載内容や患者の問診結果などを解析できるよう、自然言語処理技術の発展も進んでいる。今後はゲノム解析による疾病診断、レセプトの自動作成、新薬の開発などが行えるよう期待されている<ref>{{Cite web |title=AI医療の現状と未来｜AIが医療分野でできること・メリット・デメリットなど徹底解説｜EAGLYS株式会社 |url=https://www.eaglys.co.jp/news/column/ai/aimedical |website=EAGLYS株式会社 |access-date=2023-03-06 |language=ja}}</ref>。
+
+また、症例が少ない希少疾患の場合、患者の個人情報の保護が重要になるため、データを暗号化した状態で統計解析を行う秘密計算技術にAIを活用して、データの前処理、学習、推論を行えることを目指す研究が行われている<ref>{{Cite web |title=少数の患者のために。秘密計算AIが照らし出す、希少疾患のミライ｜JOURNAL（リサーチやレポート）｜事業共創で未来を創るOPEN HUB for Smart World |url=https://openhub.ntt.com/journal/2608.html |website=openhub.ntt.com |access-date=2023-03-06 |language=ja}}</ref>。
+
+=== 農業に関する応用事例 ===
+AIを搭載した収穫ロボットを導入することで、重労働である農作業の負担を減らしたり、病害虫が発生している個所をAIでピンポイントで見つけだして、農薬散布量を必要最小限に抑えたりすることが可能になる。また、AIで事前に収穫量を正確に予測できれば、出荷量の調整にも役立つ。<ref>{{Cite web |title=農業へのAI導入事例15選！スマート農業・自動化ロボットで変わる？【2023年最新版】 |url=https://ai-market.jp/industry/agriculture_ai/ |website=AI Market |date=2021-03-10 |access-date=2023-03-06 |language=ja |first=AI Market |last=編集部}}</ref>
+
+Googleは農作物のスキャニングと成長記録を行う農業AIロボット「Don Roverto」を開発。多くの苗の個体識別を行い実験を繰り返すことで、厳しい環境下でも耐えられる気候変動に強い種を瞬時に見つけ出せる<ref>{{Cite web |title=“AIが勧める“あなたの一皿。6つの先進事例から学ぶフードテック最前線 前編｜JOURNAL（リサーチやレポート）｜事業共創で未来を創るOPEN HUB for Smart World |url=https://openhub.ntt.com/journal/3188.html |website=openhub.ntt.com |access-date=2023-03-06 |language=ja}}</ref>。
+
+== 議論・問題・批判 ==
+=== AIによる人類滅亡のリスク ===
+AIは人類が制御不能なほどに自らの性能を向上させる可能性があるとされる。[[物理学者]]の[[スティーブン・ホーキング]]は「人類の終わりを告げる」可能性を指摘した{{sfnp|Cellan-Jones|2014}}。[[哲学者]]の[[ニック・ボストロム]]は、十分に知的なAIが、ある目標の達成に基づいて行動を選択する場合、資源の獲得や停止されることから自身を守るなどの収束的行動を示すと論じている。このAIの目標が人類の目標を完全に反映していない場合、より多くの資源を獲得したり、停止されるのを防いだりするために、最終的には人類に危害を加える可能性を指摘し、AIがどんなに謙虚で「友好的」な目標を掲げていたとしても、AIは人類にリスクをもたらすと結論付けている<ref>。{{Harvtxt|Bostrom|2014}}; {{Harvtxt|Müller|Bostrom|2014}}; {{Harvtxt|Bostrom|2015}}</ref>。[[政治学者]]のチャールズ・T・ルービンは、「十分に高度な博愛主義は悪意と見分けがつかないかもしれない」とし、機械やロボットが人類の道徳システムを共有すると信じる[[アプリオリ]]な理由がないため、機械やロボットが人類を好意的に扱うと仮定すべきではないと論じた{{sfnp|Rubin|2003}}。
+	
+専門家や業界関係者の意見はまちまちで、かなりの割合が最終的に超人的な能力を持つAIのリスクを懸念する一方で、楽観的な立場を取るものも少なくない{{sfnp|Müller|Bostrom|2014}}。[[スティーブン・ホーキング]]、[[マイクロソフト]]創業者の[[ビル・ゲイツ]]、[[歴史学者]]の[[ユヴァル・ノア・ハラリ]]、[[スペースX]]創業者の[[イーロン・マスク]]らは、いずれもAIの将来について深刻な懸念を表明している<ref>
+Leaders' concerns about the existential risks of AI:
+* {{harvtxt|Rawlinson|2015}}
+* {{Harvtxt|Holley|2015}}
+* {{Harvtxt|Gibbs|2014}}
+* {{harvtxt|Churm|2019}}
+* {{harvtxt|Sainato|2015}}
+</ref>。
+
+* [[スティーブン・ホーキング]]「人工知能の発明は、人類史上最大の出来事だった。だが同時に『最後』の出来事になってしまう可能性もある」<ref name=":6">[http://www.huffingtonpost.jp/2014/12/03/stephen-hawking-ai-spell-the-end-_n_6266236.html ホーキング博士「人工知能の進化は人類の終焉を意味する」]</ref>
+* [[ビル・ゲイツ]]「これは確かに不安を招く問題だ。よく制御できれば、[[ロボット]]は人間に幸福をもたらせる。しかし、数年後、ロボットの知能は充分に発展すれば、必ず人間の心配事になる」<ref name=":8">[http://news.infoseek.co.jp/article/xinhuaxia_60823/ ビル・ゲイツ氏も、人工知能の脅威に懸念]</ref>
+* [[イーロン・マスク]]「人工知能についてはかなり慎重にならないといけないと思います。おそらく人類の一番大きな脅威となりうるものですね。ですので、本当に慎重さが求められます。規制や監視が国レベル、あるいは国際レベルで必要だと思いますね。私たちが何か分別に欠けるようなことをしないためにね。'''人工知能は悪魔を呼び出すようなもの'''ですから」<ref>https://logmi.jp/business/articles/69130</ref>
+
+この他にも、[[イーロン・マスク]]はAIについての深刻な懸念を繰り返し表明しており、｢悪魔のような独裁者は、少なくともいつかは死ぬ。だが、AIに死が訪れることはない。永遠に生きる。つまり、絶対に逃れることのできない不死身の独裁者が現れるようなものだ｣として、永遠に破壊されることのない危険なAIを作り出す危険性を警告したほか、「AIが[[核兵器]]よりも危険なものとなる可能性がある」と表明している。また、AI開発を巡る国家間の競争を「第三次世界大戦の原因」になりうると指摘、AIは文明が直面する最大のリスクであると述べている<ref>https://www.businessinsider.jp/post-165330</ref><ref>https://japan.cnet.com/article/35115147/</ref>。
+
+[[ピーター・ティール]]とマスクを含む著名なハイテク企業は、[[OpenAI]]やFLIなどの責任あるAI開発を支持する非営利企業に10億ドル以上を出資している<ref>
+Funding to mitigate risks of AI:
+* {{harvtxt|Post|2015}}
+* {{Harvtxt|Del Prado|2015}}
+* {{Harvtxt|Clark|2015a}}
+* {{Harvtxt|FastCompany|2015}}
+</ref>。
+
+一方で、[[Facebook]]の[[マーク・ザッカーバーグ]]は、人工知能は現在の形で役に立っており、今後も人類の助けになり続けると述べている<ref>
+Leaders who argue the benefits of AI outweigh the risks:
+* {{Harvtxt| Thibodeau |2019}}
+* {{Harvtxt| Bhardwaj |2018}}
+</ref>。リスクは研究する価値がないほど遠い将来である、あるいは超高知能AIから人類は便益を受けることになると主張する専門家もいる<ref>
+Arguments that AI is not an imminent risk:
+* {{Harvtxt|Brooks|2014}}
+* {{Harvtxt|Geist |2015}}
+* {{Harvtxt|Madrigal|2015}}
+* {{Harvtxt|Lee |2014}}
+</ref>。 特にロドニー・ブルックスは「悪意ある」AIはまだ数世紀先だと述べている{{sfnp|Brooks|2014}}。
+
+ルンド大学のアナマリア・デュトチェク・セゲステン教授は、人工知能の利点と限界を理解することは、人工知能に対する無知が妨げになると指摘している<ref>{{Cite web |title=https://www.coursera.org/lecture/ai-business-future-of-work/the-definition-of-ai-MAOQw |url=https://www.coursera.org/lecture/ai-business-future-of-work/the-definition-of-ai-MAOQw |website=Coursera |access-date=2022-12-23 |language=ja}}</ref>。[[人工知能学会]]の[[松尾豊]]は、著書『人工知能は人間を超えるか』内に於いて、[[人間]]に対して[[反乱]]を起こす可能性を否定している。人工知能学会会長の野田五十樹は、「[[技術的特異点|シンギュラリティ（技術的特異点）]]」や「[[2045年問題|2045年にAIが人間の知能を超える]]」という予測に対して「SFめいた話だ」と批判し<ref name=itmediaNoda>https://www.itmedia.co.jp/news/articles/2010/29/news084_3.html</ref>、「そもそも“[[知能]]”が何を示すのか、定義をせずに語っても意味が無い。仮に知能が[[計算]]力を指しているのであれば、[[1980年代|80年代]]からとっくに人間の能力を超えていることになる」と述べている<ref name=itmediaNoda/>。
+
+2012年以前、社会学者ロバート・M・ゲラチは、AIと[[ロボット工学]]（ロボティクス）を専攻している[[カーネギーメロン大学]]の研究所を現地調査した結果、実際の研究はシンギュラリティ論とかけ離れた「世俗的現実」（"the mundane reality"）であると結論した{{sfn|Geraci|2012|pp=38-39}}。同氏はカーツワイルや[[ハンス・モラベック]]らのシンギュラリティ論を「[[終末論]]的AI」（"Apocalyptic AI"）と呼び、そのような論自体に対しては支持も反論もしないと前提した{{sfn|Geraci|2012|pp=1-2}}。その上で、「終末論的AI」を[[通俗科学]]（pop science）の一種と見なしている{{sfn|Geraci|2012|p=64}}。つまりそれは[[宗教]]・[[エンターテインメント]]・[[フィクション]]等と同じような、分かりやすくて興味を刺激する説明を使い、大勢の興味を引いて研究費を獲得しているとし、「終末論的AIは、実際のところ、金銭の要求である。（"Apocalyptic AI is, indeed, a request for money."）」と述べている{{sfn|Geraci|2012|p=64}}。
+
+=== 人権侵害 ===
+[[マサチューセッツ工科大学]]の教授{{仮リンク|ローレン・R・グレアム|en|Loren Graham}}は、莫大な資金力と[[人権]]の弾圧を併せ持つ[[中国]]が人工知能の開発競争で成功すれば、民主的な国家が技術革新に優位という既成概念が変わると述べ<ref name=wsj1837/>、「ディープラーニングの父」の一人と呼ばれている[[ヨシュア・ベンジオ]]は、中国が市民の監視や政治目的で人工知能を利用していることに警鐘を鳴らしており<ref>{{cite news|date=2019-04-01|url=https://www.sankeibiz.jp/macro/news/190401/mcb1904010710001-n1.htm|title=「深層学習の父」、中国のＡＩ利用に警鐘|publisher=[[Sankei Biz]]|accessdate=2019-04-05}}</ref><ref>{{cite news|date=2019-02-02|url=https://www.bloomberg.com/news/articles/2019-02-02/deep-learning-godfather-bengio-worries-about-china-s-use-of-ai|title=Deep Learning ‘Godfather’ Bengio Worries About China's Use of AI|publisher=[[ブルームバーグ (企業)|ブルームバーグ]]|accessdate=2019-04-05}}</ref>、世界の人権団体やメディアは、中国に代表される人工知能で人権を抑圧する政治体制を「デジタル権威主義」<ref name=freedom2018/><ref>{{cite web|title=人工知能とデジタル権威主義――　民主主義は生き残れるか|url=https://www.foreignaffairsj.co.jp/articles/201808_wright/|website=Foreign Affairs|accessdate=2019-11-10}}</ref>「デジタル独裁」<ref>{{cite web|title=China’s digital dictatorship|url=https://www.economist.com/leaders/2016/12/17/chinas-digital-dictatorship|website=[[エコノミスト]]|accessdate=2019-11-10|date=2018-07-31}}</ref><ref>{{cite web|title=中国「デジタル独裁」、結末は小説を超えるか
+|url=http://jp.wsj.com/articles/SB12346302927663484593304584075711707619126|website=[[ウォール・ストリート・ジャーナル]]|accessdate=2019-11-10|date=2018-07-31}}</ref><ref>{{cite web|title=中国の全人代が開幕 デジタル独裁に進む隣国|url=https://mainichi.jp/articles/20180306/ddm/005/070/039000c|website=[[毎日新聞]]|accessdate=2019-11-10|date=2018-07-31}}</ref>「デジタル[[警察国家]]」<ref>{{cite web|title=Does China’s digital police state have echoes in the West?|url=https://www.economist.com/leaders/2018/05/31/does-chinas-digital-police-state-have-echoes-in-the-west|website=[[エコノミスト]]|accessdate=2019-11-10|date=2018-06-08}}</ref>「デジタル全体主義」<ref>{{cite web|title=The rise of China as a digital totalitarian state|url=https://www.washingtonpost.com/news/theworldpost/wp/2018/02/21/china-internet/?utm_term=.2bc2c1e7131d|website=[[ワシントン・ポスト]]|accessdate=2019-11-10|date=2018-02-21}}</ref>「AI独裁」<ref>{{Cite web|url=https://www.nikkei.com/article/DGXMZO45830760X00C19A6TCR000/|title=AI独裁ばらまく中国　拡販される監視システム|publisher=[[日本経済新聞]]|language=|date=2019-06-08|accessdate=2019-11-12}}</ref>と呼んだ。
+
+中国では、ヘルメットや帽子に埋め込んだセンサーから、国民の脳波と感情を人工知能で監視する、中国政府支援のプロジェクトが推し進められ<ref>{{cite web|title=中国政府が労働者の脳から直接データを取り出す計画を推進中（中国）|url=http://karapaia.com/archives/52259083.html|website=[[カラパイア]]|accessdate=2019-01-11|date=2018-05-04}}</ref><ref>{{cite web|title=労働者の脳波をスキャンして管理する「感情監視システム」が中国で開発されて実際に現場へ投入されている|url=https://gigazine.net/news/20180507-china-brain-scan-system/|website=GIGAZINE|accessdate=2018-05-07|date=2018-05-11}}</ref><ref>{{cite web|title=中国企業、脳波ヘルメットで従業員の「感情」を監視|url=https://www.technologyreview.jp/nl/with-brain-scanning-hats-china-signals-it-has-no-interest-in-workers-privacy/|website=MITテクノロジーレビュー |accessdate=2018-05-01|date=2018-05-11}}</ref><ref>{{cite web|title='Forget the Facebook leak':China is mining data directly from workers' brains on an industrial scale|url=http://www.scmp.com/news/china/society/article/2143899/forget-facebook-leak-china-mining-data-directly-workers-brains|website=[[サウスチャイナ・モーニング・ポスト]]|accessdate=2018-05-11|date=2018-04-29}}</ref>、[[中国のネット検閲|ネット検閲]]<ref>{{cite web|title=[FT]ＡＩが増加中、中国のネット検閲作業で |url=https://www.nikkei.com/article/DGXMZO30854150T20C18A5000000/|website=[[日本経済新聞]]|accessdate=2018-05-23|date=2019-11-12}}</ref><ref>{{Cite web |date= 2019-05-30|url= https://jp.reuters.com/article/china-tiananmen-censorship-idJPKCN1T0084|title= アングル：天安門事件30年で中国厳戒、「ＡＩ検閲」フル稼働 |publisher= [[ロイター]]|accessdate=2019-11-12}}</ref>と[[官僚]]や[[刑務所]]の囚人から[[横断歩道]]の歩行者まで監視を人工知能に行わせ<ref>{{cite news |title=Is China’s corruption-busting AI system ‘Zero Trust’ being turned off for being too efficient? |publisher=[[サウスチャイナ・モーニング・ポスト]] |date=2019-02-04|url=https://www.scmp.com/news/china/science/article/2184857/chinas-corruption-busting-ai-system-zero-trust-being-turned-being|accessdate=2019-11-12|author=}}</ref><ref>{{cite news |title=「官僚の腐敗を検出するAIシステム」を中国で導入した結果とは？ |publisher=[[GIGAZINE]] |date=2019-02-04|url=https://gigazine.net/news/20190204-china-corruption-busting-ai-system/|accessdate=2019-11-12|author=}}</ref><ref>{{cite web|title=No escape? Chinese VIP jail puts AI monitors in every cell ‘to make prison breaks impossible’|url=https://www.scmp.com/news/china/science/article/3003903/no-escape-chinese-vip-jail-puts-ai-monitors-every-cell-make|website=[[サウスチャイナ・モーニング・ポスト]]|accessdate=2019-04-11|date=2019-04-01}}</ref><ref>{{cite news |title=中国の社会スコアAIがバス広告の女性を｢信号無視｣判定|url=https://www.gizmodo.jp/2018/11/facial-recognition-flags-woman-on-bus-ad.html|accessdate=2019-11-12 |work=[[ギズモード]] |date=2018-11-30}}</ref><ref>{{cite news |title=Jaywalkers under surveillance in Shenzhen soon to be punished via text messages|url=https://www.scmp.com/tech/china-tech/article/2138960/jaywalkers-under-surveillance-shenzhen-soon-be-punished-text|accessdate=2019-11-12 |work=[[サウスチャイナ・モーニング・ポスト]] |date=2018-03-27}}</ref><ref>{{cite news |title=歩行者の信号無視を顔認証で検知、信用記録に反映 南京|url=https://www.afpbb.com/articles/-/3234320|accessdate=2019-11-12 |work=[[AFPBB]] |date=2019-07-28}}</ref>、[[監視カメラ]]と[[警察]]の[[サングラス]]型[[スマートグラス]]<ref>{{Cite web|url=https://gigazine.net/news/20180209-chinese-police-sunglass-camera/|title=中国の警察は顔認識機能を搭載したサングラス型デバイスを導入して監視体制を強化している|publisher=GIGAZINE|date=2018-02-09|accessdate=2019-01-11}}</ref>や[[ロボット]]<ref>{{Cite web|url=https://www.bbc.com/japanese/features-and-analysis-44434720|title=未来の街はロボットが運営？　ドバイや中国では現実に|publisher=[[BBC]]|date=2018-06-15|accessdate=2019-04-25}}</ref>に[[顔認識システム]]（[[天網]]）を搭載するなど人工知能による[[監視社会]]・[[管理社会]]化が行われている<ref name=voa201911>{{cite web|title=以安全的名義--習近平治國“黑科技”有多少？|url=https://www.voacantonese.com/a/china-techno-governance-20191108/5160135.html|website=[[ボイス・オブ・アメリカ]]|accessdate=2019-11-11|date=2019-11-11}}</ref><ref>{{cite web|title=焦点：中国、ブラックテクノロジー駆使して監視国家構築へ|url=https://jp.reuters.com/article/china-parliament-surveillance-idJPKCN1GQ0UT|website=[[ロイター]]|accessdate=2019-11-11|date=2018-03-15}}</ref><ref>{{Cite web|url=https://www.nikkei.com/article/DGXMZO51859280W9A101C1EA1000/|title=中国、ハイテク監視強化　AI活用で世論統制|publisher=[[日本経済新聞]]|language=|date=2019-11-06|accessdate=2019-11-10}}</ref><ref>{{Cite web|url=https://www.nikkei.com/article/DGKKZO45392760Y9A520C1FFJ000/|title=中国、AIで監視強化|publisher=[[日本経済新聞]]|language=|date=2019-05-19|accessdate=2019-11-10}}</ref>。
+
+[[新疆ウイグル自治区]]では、監視カメラや[[携帯電話]]などから収集した個人情報を、人工知能で解析する{{仮リンク|プレディクティブ・ポリシング|en|Predictive policing}}や[[レイシャル・プロファイリング|人種プロファイリング]]で選別した少数民族の[[ウイグル族]]を法的手続きを経ずに、2017年6月時点で約1万5千人も[[テロリズム]]や[[犯罪]]を犯す可能性があるとして、[[新疆ウイグル再教育キャンプ]]に[[予防拘禁]]しているとする、中国政府の内部文書である{{仮リンク|チャイナ・ケーブル|en|China Cables}}が報じられており<ref>{{cite news |title=Exposed: China’s Operating Manuals For Mass Internment And Arrest By Algorithm |newspaper=[[国際調査報道ジャーナリスト連合]]（ICIJ） |date=2019-11-24|url=https://www.icij.org/investigations/china-cables/exposed-chinas-operating-manuals-for-mass-internment-and-arrest-by-algorithm/|accessdate=2019-11-26}}</ref><ref>{{cite news |title=大規模システムでウイグル族を監視　中国当局の内部文書判明|newspaper=[[東京新聞]] |date=2019-11-25|url=https://www.tokyo-np.co.jp/article/world/list/201911/CK2019112502000118.html |accessdate=2019-11-26}}</ref><ref>{{cite news|date=2019-04-15|url=https://gizmodo.com/automated-racism-chinese-police-are-reportedly-using-a-1834054068|title='Automated Racism': Chinese Police Are Reportedly Using AI to Identify Minority Faces|publisher=[[ギズモード]]|accessdate=2019-04-16}}</ref>、AIを使った政府による特定の民族の選別や、コンピュータが人間を[[強制収容所]]に送る[[人権蹂躙]]は「前例がない」として、国際問題になっている<ref>{{cite news|date=2019-04-14|url=https://www.nytimes.com/2019/04/14/technology/china-surveillance-artificial-intelligence-racial-profiling.html|title=One Month, 500,000 Face Scans: How China Is Using A.I. to Profile a Minority|publisher=[[ニューヨーク・タイムズ]]|accessdate=2019-12-10}}</ref><ref>{{cite news |title=Secret documents: China detention camps to 'prevent escapes' |newspaper=[[毎日新聞]] |date=2019-11-25|url=https://mainichi.jp/english/articles/20191125/p2g/00m/0in/039000c |accessdate=2019-11-25}}</ref>。[[香港]]では、中国本土と同様の人工知能による監視社会化を恐れ<ref>{{Cite news|title=監視社会恐れる香港市民、中国本土化を懸念－警察は顔認識ＡＩ活用|newspaper=[[ブルームバーグ (企業)|ブルームバーグ]]|date=2019-10-24|url=https://www.bloomberg.co.jp/news/articles/2019-10-24/PZTF9HT0AFBB01|accessdate=2019-11-11}}</ref>、[[2019年-2020年香港民主化デモ]]が起きた際は、[[監視カメラ]]を搭載したスマート[[街灯]]が、市民に次々と破壊された<ref>{{cite web|title=中国式監視vs若者の知恵　香港デモ、サイバー領域でも|url=https://www.nikkei.com/article/DGXMZO46570240V20C19A6EA1000/|website=[[日本経済新聞]]|accessdate=2019-06-05|date=2019-06-26}}</ref><ref>{{cite web|title=香港デモ、参加者の新たな標的は監視カメラを搭載した｢スマート街灯｣|url=https://www.businessinsider.jp/post-197553|website=[[ビジネスインサイダー]]|accessdate=2019-11-12|date=2019-08-28}}</ref>。
+
+中国は、AI監視技術を[[中東]]・[[アジア]]・[[アフリカ]]など、世界各国に輸出しており<ref>{{Cite web|url=https://www.newsweekjapan.jp/stories/world/2019/04/post-12040.php|title=中国が世界54カ国にAI監視技術を輸出|publisher=[[ニューズウィーク]]|language=|date=2019-04-24|accessdate=2019-04-26}}</ref><ref>{{Cite web|url=https://medium.com/next-geopolitics/china-is-taking-its-ai-around-the-world-this-should-scare-the-us-7f4305d90480|title=China Is Taking Its AI Around The World. This Should Scare The US|publisher=Medium|language=|date=2018-08-14|accessdate=2018-10-26}}</ref><ref>{{Cite web|url=https://forbesjapan.com/articles/detail/18689|title=中国で実用化進む「顔認識AI」が世界に拡散 大幅な効率化も|publisher=[[フォーブス (雑誌)|フォーブス]]|language=|date=2017-12-02|accessdate=2018-10-26}}</ref><ref>{{Cite web|url=https://www.washingtonpost.com/opinions/2018/12/05/china-exports-its-high-tech-authoritarianism-venezuela-it-must-be-stopped/|title=China exports its high-tech authoritarianism to Venezuela. It must be stopped.|publisher=[[ワシントン・ポスト]]|language=|date=2018-12-05|accessdate=2018-12-13}}</ref><ref>{{Cite web|url=https://thediplomat.com/2018/10/how-chinas-ai-technology-exports-are-seeding-surveillance-societies-globally/|title=How China’s AI Technology Exports Are Seeding Surveillance Societies Globally|publisher=THhe Diplomat|language=|date=2018-10-18|accessdate=2018-10-26}}</ref><ref name=freedom2018>{{cite web|title=Freedom on the Net 2018 The Rise of Digital Authoritarianism|url=https://freedomhouse.org/report/freedom-net/freedom-net-2018/rise-digital-authoritarianism|website=[[フリーダム・ハウス]]|accessdate=2018-12-13}}</ref>、[[国際連合]]の[[専門機関]]である[[国際電気通信連合]]（ITU）を通じて、中国がAI監視技術の国際標準化も主導してることから、中国のような人権侵害が世界に拡散することが、人権団体から懸念されている<ref>{{Cite web|url=https://www.ft.com/content/c3555a3c-0d3e-11ea-b2d6-9bf4d1957a67|title=Chinese tech groups shaping UN facial recognition standards|publisher=[[ファイナンシャル・タイムズ]]|language=|date=2019-12-02|accessdate=2019-12-10}}</ref><ref>{{Cite web|url=https://forbesjapan.com/articles/detail/31065?internal=nav_cat_technology|title=中国が「AIの標準化」に拍車　国際標準の提案も|publisher=[[フォーブス (雑誌)|フォーブス]]|language=|date=2019-12-05|accessdate=2019-12-10}}</ref>。
+
+半自動の四脚ロボット「Spot（スポット）」は<ref>{{Cite web|title=【速報】ボストンダイナミクスが四足歩行ロボット「Spot」の新機能と活用事例を発表 自律移動/遠隔操作/運用管理/アームを強化 {{!}} ロボスタ - ロボット情報WEBマガジン|url=https://robotstart.info/2021/02/03/spot-launchevent2021.html|website=ロボスタ|accessdate=2021-07-10|language=ja}}</ref>、[[ニューヨーク市警]]によって現場に配備されていたが、市民らの抗議により利用中止になった<ref name="wiredSpot">https://wired.jp/2021/05/02/new-york-returns-police-robodog-after-public-outcry/</ref>。「一般的に大半のSpotは、故障した送電線やガス漏れの調査などに使われている」反面、警察は市民らの承認を得ずにSpotを購入し利用していたため、「ロボット犬」とレッテルが貼られた<ref name="wiredSpot" />。
+
+==== ディープフェイク ====
+[[アメリカ]]では[[ディープフェイク]]が[[社会問題]]化している。[[著名人]]のポルノ画像が偽造されるようになっており、[[Twitch]]で人気を集める配信者のQTCinderellaは、偽造ポルノ画像を家族に送付される嫌がらせを受けた。[[南カリフォルニア大学]]の専門家は、[[フェイクポルノ]]を拡散された[[教員]]が失職に追い込まれた例もあったと証言している。フェイクポルノが大量に公開されたウェブサイトも出現しており、合法的なアダルトコンテンツに経済的な脅威を与える可能性が懸念されている<ref name="wspost-ai-porn-deepfakes-women-consent">{{Cite web |title=AI porn is easy to make now. For women, that’s a nightmare. |website=The Washington Post|url=https://www.washingtonpost.com/technology/2023/02/13/ai-porn-deepfakes-women-consent/|access-date=2023-2-20}}</ref><ref>{{Cite web |title=画像生成AIで18禁エロ画像を作成することに情熱を燃やす集団「Unstable Diffusion」とは？ |url=https://gigazine.net/news/20221121-unstable-diffusion-monetize-ai-porn-generators/ |website=GIGAZINE |access-date=2023-02-08 |language=ja}}</ref>。
+
+[[OpenAI]]が提供する画像生成AIはフェイクポルノに悪用されないように、特定のリクエストの入力をブロックするような対策がされている一方で、モデルが公開されている[[Stable Diffusion]]には名目上ポルノ生成を抑止するような方策が取られているものの、実際にはそれを回避した性的なコンテンツの生成が可能である。[[カリフォルニア大学バークレー校]]教授のハニー・ファリドによれば、インターネット上に公開された何億もの画像データを学習する過程で、女性を性的に扱う[[バイアス]]が反映されるため、モデルの出力を100%制御することは困難であるとされる。[[2022年]]11月にリリースされた「Lensa」も、女性の写真を全裸にしたり、胸を大きくするなどの加工に悪用できるとされ、問題視されている<ref name="wspost-ai-porn-deepfakes-women-consent">{{Cite web |title=AI porn is easy to make now. For women, that’s a nightmare. |website=The Washington Post|url=https://www.washingtonpost.com/technology/2023/02/13/ai-porn-deepfakes-women-consent/|access-date=2023-2-20}}</ref>。
+
+[[Kickstarter]]では、[[Stable Diffusion]]によるポルノの作成を目指す出資プロジェクトが、集めた資金で既存の画像を学習データとして利用することが、多くのアーティストから批判されていることを受け、AIアートに関する条項を変更し、プロジェクトをブロックした<ref>{{Cite web |title=AIでポルノ画像を作成するプロジェクト「Unstable Diffusion」がKickstarterでの出資募集をブロックされる |url=https://gigazine.net/news/20221226-kickstarter-ai-porn-unstable-diffusion/ |website=GIGAZINE |access-date=2023-02-08 |language=ja}}</ref>。
+
+==== 差別 ====
+AIプログラムは、実世界のデータによる[[バイアス]]が生じることがある。このバイアスはプログラムによって学習されるため、AIの開発者はバイアスが存在することに気づかないことが多い{{sfnp|CNA|2019}}。バイアスは学習データの選択方法によって不注意に導入される可能性がある{{sfnp|Goffrey|2008|p=17}}。また[[相関関係]]から出現することもある。AIは個人をグループに分類し、その個人がグループの他のメンバーに類似していると仮定して予測を行うために使用されるが、場合によっては、この仮定は不当であるかもしれない<ref>{{Harvtxt|Lipartito|2011|p=36}}; {{Harvtxt|Goodman|Flaxman|2017|p=6}}</ref>。この例として、[[COMPAS (ソフトウェア)|COMPAS]]は、被告人が再犯者になる可能性を評価するために、アメリカの裁判所によって広く使用されている商用プログラムであるが、[[プロパブリカ]]は、COMPASが割り当てた[[黒人]]の被告の再犯リスクレベルは、プログラムが被告の人種を知らされていなかったにもかかわらず、[[白人]]の被告のそれよりもはるかに過大評価される可能性があると主張している{{sfnp|Larson|Angwin|2016}}。 アルゴリズムのバイアスが不公平な結果につながる可能性がある他の例は、[[信用格付け]]や採用の判断にAIが使われる場合である。
+
+AIの出力結果は入力値を改竄したり、恣意的にバイアスを含むような訓練データを準備することなどの手法で操作できるため、[[差別]]や[[ハラスメント]]、その他の不正行為に対する[[法的責任]]を回避するように悪用することが可能である。例えば、「AIが判断したんだから正しい」として部下に無理難題を押し付けるような[[パワーハラスメント]]が想定されるため、AIモデルの説明責任が重視されている<ref name="nakagawa-aiethics">中川裕志「AI倫理」『機械学習工学』講談社 2022年 ISBN 978-4-06-528586-2 pp.199-241</ref>。
+
+一方で、ルンド大学のアナマリア・デュトチェク・セゲステン教授は、人工知能の利用における差別などの問題に注意を促しつつも<ref>{{Cite web |title=https://www.coursera.org/lecture/ai-business-future-of-work/module-3-introduction-Oi14T |url=https://www.coursera.org/lecture/ai-business-future-of-work/module-3-introduction-Oi14T |website=Coursera |access-date=2022-12-21 |language=ja}}</ref>、人工知能は差別や感情を持たないため、人事などの雇用問題の分野で働くのに適していると述べた<ref name=":10">{{Cite web |title=https://www.coursera.org/lecture/ai-business-future-of-work/human-resources-ivZwO |url=https://www.coursera.org/lecture/ai-business-future-of-work/human-resources-ivZwO |website=Coursera |access-date=2022-12-24 |language=ja}}</ref>。
+
+中国の[[社会信用システム]]に代表されるような、人工知能でビッグデータを活用して人々の適性を決める制度は、社会階層間の格差を固定化することに繋がるとする懸念があり<ref>{{Cite web |url=https://globe.asahi.com/article/12277192 |title=AIがあなたの信用度を判断、日本にも　中国では14億人を格付けへ |accessdate=2019-12-01 |ldate=2019-04-13 |website=[[朝日新聞グローブ]]}}</ref>、[[欧州連合]]では2018年5月から、人工知能のビッグデータ分析のみによる、雇用や融資での[[差別]]を認めない、[[EU一般データ保護規則]]が施行された<ref>{{cite news |date=2016-07-28 |url=https://president.jp/articles/-/24771 |title=中国で加速する「下流層」AI判定の恐怖 |publisher=[[プレジデント社|プレジデント・オンライン]] |accessdate=2019-02-22}}</ref>。
+
+マサチューセッツ工科大学が[[顔認識システム]]の精度で、[[マイクロソフト|Microsoft]]と中国のMegviiは9割超で、[[IBM]]は8割に達したのに対して、[[Amazon.com]]は6割で[[人種差別]]的なバイアスがあるとする研究を発表した際は、Amazon.comと論争になった<ref>{{cite news |date=2019-04-15 |url=https://gigazine.net/news/20190415-amazon-rekognition-mit-researcher/ |title=「Amazonの顔認証ソフトの差別性」を巡りAmazonとMITの研究者が対立する |publisher=[[GIGAZINE]] |accessdate=2019-04-16}}</ref>。
+
+=== 軍事利用 ===
+{{main|自律型致死兵器システム|en:Lethal autonomous weapon}}
+2022年のウクライナとロシアの戦争でも人工知能が重要な役割を果たすと経済平和研究所は報告している<ref name=":9" />。主要国の軍隊は、ミサイル防衛の分野での自動化を研究しており、一部は実現している。アメリカ海軍は完全自動の防空システム「[[ファランクス (火器)|ファランクスCIWS]]」を導入しガトリング砲により対艦ミサイルを破壊できる。イスラエル軍は対空迎撃ミサイルシステム「[[アイアンドーム]]」を所有し、[[ガザ地区]]との境界線には標的を自動検知する[[ガーディアム]]や[[サムソン RCWS]]を稼働させて複数の人間を射殺している<ref>"Lethal Robotic Technologies: The Implications for Human Rights and International Humanitarian Law" Philip Alston, Journal of Law, Information and Science, 2012</ref><ref>{{cite news|date=2008-12-08|url=https://wired.jp/2008/12/08/ガザ地区境界線に広がる、イスラエルの「自動殺傷ゾーン」/|title=ガザ地区境界線に広がる、イスラエルの「自動殺傷ゾーン」|publisher=[[WIRED]]|accessdate=2019-04-16}}</ref>。今後AIは新しい軍事能力を生み、軍の指揮、訓練、部隊の展開を変え、戦争を一変させその変化は大国間の軍事バランスを決めることになるとの主張もある<ref name="Foreign Affairs">[https://www.foreignaffairs.com/articles/china/2017-12-05/artificial-intelligence-and-chinese-power Artificial Intelligence and Chinese Power]（[[フォーリン・アフェアーズ]] 2017年12月5日）</ref>。作戦行動中の意思決定を補助するシステムも開発されており。[[P-1 (哨戒機)|P-1]]には[[戦術航空士]]の支援用として各種データを解析に最適な作戦を指示する戦闘指揮システムが搭載されている。
+
+2016年6月、米[[シンシナティ大学]]の研究チームが開発した「ALPHA」は、元米軍パイロットとの模擬空戦で一方的に勝利したと発表された。AIプログラムは遺伝的アルゴリズムとファジィ制御を使用しており、アルゴリズムの動作に高い処理能力は必要とせず、[[Raspberry Pi]]上で動作可能<ref>{{Cite web |url=http://business.newsln.jp/news/201606300651300000.html |title=Raspberry PiによるAIプログラム、軍用フライトシミュレーターを使った模擬格闘戦で人間のパイロットに勝利 |publisher=Business newsline |accessdate=2016-09-19}}</ref><ref>{{Cite web |url=https://www.sankei.com/article/20160719-SX4OHLGLTJPSDFJHZFCTZYS7JI/ |title=〝トップ・ガン〟がＡＩに惨敗 摸擬空戦で一方的に撃墜 「子供用パソコンがハード」に二重のショック |publisher=産経WEST |accessdate=2016-09-19}}</ref>。[[アメリカ合衆国国防総省]]は、人道上の観点から人間の判断を介さない自律殺傷兵器の開発禁止令を2012年に出し、2017年にはこれを恒久的なものにした<ref>[http://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/300009p.pdf]</ref>。
+
+一部の科学者やハイテク企業の首脳らは、AIの軍事利用により世界の不安定化は加速すると主張している。2015年に[[ブエノスアイレス]]で開催された[[人工知能国際合同会議]]で、スティーブン・ホーキング、アメリカ宇宙ベンチャー企業の[[スペースX]]創業者のイーロン・マスク、[[Apple]]の共同創業者の[[スティーブ・ウォズニアック]]ら、科学者と企業家らにより公開書簡が出されたが、そこには自動操縦による[[無人爆撃機]]や銃火器を操る人型ロボットなどAI搭載型兵器は、[[火薬]]、[[核兵器]]に続く第3の革命ととらえられ、うち一部は数年以内に実用可能となると予測。国家の不安定化、暗殺、抑圧、特定の民族への選別攻撃などに利用され、兵器の開発競争が人類にとって有益なものとはならないと明記された。
+
+2015年4月には、[[ハーバード大学]]ロースクールと国際人権団体である[[ヒューマン・ライツ・ウォッチ]]が、自動操縦型武器の禁止を求めている<ref name="cnn">[http://www.cnn.co.jp/tech/35068128.html cnn.co.jp - 人工知能の軍事利用に警鐘、Ｅ・マスク氏ら著名人が公開書簡 2015.07.30 Thu posted at 11:51 JST]</ref>。2017年11月には、[[国際連合]]でAIの軍事利用に関する初の公式専門家会議が行われ<ref>{{cite news|date=2017-11-18|url=https://www.sankei.com/world/news/171118/wor1711180027-n1.html|title=殺人ロボット兵器、規制めぐる議論継続へ 国連、初の専門家会議終了|publisher=[[産経デジタル|産経ニュース]]|accessdate=2019-04-16}}</ref>、2019年8月に同会議は、AI兵器の運用をめぐる事実上初の国際ルールを採択するも、法的拘束力は盛り込まれなかった<ref>{{cite news|date=2019-08-22|url=https://www3.nhk.or.jp/news/html/20190822/k10012044131000.html|title=「ＡＩ兵器」国際ルール合意も法的拘束力なく懸念|publisher=[[NHK]]|accessdate=2019-08-22}}</ref>。
+
+2019年から、[[アメリカ国防総省]]とJAICが2030年に向けて戦術や戦闘方式に革命を起こすために「[[結合全ドメイン指揮統制]]」とよばれるシステムの構築と導入を進めている。空軍、陸軍、海兵隊、海軍および宇宙軍の全ての軍種のセンサーをJADC2内のネットワークに接続する。加えてAIを用いて敵国の行動予測、偵察活動の自動化を実現し、戦術策定、戦闘計画の自動生成も行う。[[ピーター・ティール|Palantir]]やボーイングがこの開発に関わっている。
+
+[[国防高等研究計画局|アメリカ国防高等研究計画局]]や米空軍研究所は、Rebellion DefenseやHeron Systemsといったベンチャー企業と協力して、[[XQ-58 (航空機)|XQ-58A]]等の無人戦闘機の空中戦闘能力をAIを用いて強化する技術開発を進めている。また[[MQ-9 リーパー|MQ-9]]、[[B-21 (航空機)|B21]]といった偵察爆撃機にCNNのような画像認識AIを導入する取り組みも進めている。Rebellion Defenseは元Google会長のエリックシュミットが出資しており、以前米国防総省がGoogleのTensorFlowを使用して画像認識技術の軍事転用をしようと試み、それが文書で明らかになってからGoogle社内から批判の声が上がったこともある。
+
+2022年12月、[[ロッキード・マーティン]]が、AIエージェントの自律操縦ソフトを実装し、17時間以上の戦闘機の訓練飛行を完了した。
+
+==== 東西対立 ====
+[[新冷戦]]や[[米中冷戦]]の状態にあるとも評されている、アメリカ合衆国・中国・ロシアは、核開発に匹敵する開発競争を人工知能の軍事利用をめぐって行っている<ref>{{Cite web |url=https://wired.jp/2017/09/19/artificial-intelligence-fuels/ |title=核に代わる「人工知能の軍事利用」、米中露3国の開発レースの現状 |publisher=WIRED |date=2017-09-19|accessdate=2018-02-07}}</ref>。
+
+中国は、2017年6月に119機の[[無人航空機|ドローン]]群の自律飛行実験で、前年2016年に103機の飛行実験に成功したアメリカ軍の記録を更新して、翌2018年5月には[[北アメリカ]]の都市を爆撃するCG映像も発表し<ref>{{Cite web |url=https://www.asahi.com/articles/ASLDQ7JF6LDQUHBI029.html |title=ＡＩ兵器開発、米中が火花 静まりかえった北米攻撃ＣＧ |publisher=[[朝日新聞]] |date=2018-12-28|accessdate=2019-02-22}}</ref>、同年6月には56隻の自律無人艇を使った世界最大規模の試験<ref>{{Cite web |url=https://www.zakzak.co.jp/soc/news/180618/soc1806180026-n1.html |title=攻撃・偵察に…中国軍が無人艇開発 ５６隻で「群れ」世界最大の実験 |publisher=[[ZAKZAK]] |date=2018-06-18|accessdate=2019-03-05}}</ref>を行うなど、AIの軍事利用の技術（特にスウォームと呼ばれる大量の[[徘徊型兵器]]などの自律兵器の統合運用）で中国が急速に進展しており、アメリカに追い付く可能性があることについて懸念し、アメリカ合衆国では将来に備える必要があるとの主張もされている<ref name="Foreign Affairs"/>。
+
+中国の軍用AI開発は、[[アメリカ軍]]や政界に危機感を与え、2019年3月に[[ジョセフ・ダンフォード]][[統合参謀本部議長]]や[[パトリック・シャナハン]][[アメリカ合衆国国防長官|国防長官]]代行、[[ドナルド・トランプ]][[アメリカ合衆国大統領|大統領]]は、中国でのAI研究拠点の設立などで[[中国人民解放軍]]に協力していると、[[Google]]を非難し<ref>{{Cite web|date=2019-03-15|url=https://www.nikkei.com/article/DGXMZO42491790V10C19A3FF8000/|title=米軍制服組トップ、グーグルに懸念「中国軍に恩恵」|publisher=[[日本経済新聞]]|accessdate=2019-04-16}}</ref><ref>{{Cite web|date=2019-03-18|url=https://www.bloomberg.co.jp/news/articles/2019-03-17/POJ3FB6K50XS01|title=Googleは米国でなく中国の軍事力を助けている－トランプ大統領が批判|publisher=[[日本経済新聞]]|accessdate=2019-04-16}}</ref>、GoogleのCEO[[サンダー・ピチャイ]]はダンフォードやトランプ大統領と面談して、中華人民共和国のAI研究拠点の成果は、中国に限らず全ての人々に開放されていると釈明する事態になった<ref>{{Cite web|date=2019-04-09|url=https://www.nikkei.com/article/DGKKZO43480420Y9A400C1TCR000/|title=（The Economist）対中ビジネスが問う米企業の正義|publisher=[[日本経済新聞]]|accessdate=2019-04-16}}</ref>。
+
+アメリカ合衆国では、Googleがアメリカ軍のAIの軍事利用に協力する極秘計画「メイヴン計画」を行っていたことが、Googleの社員に暴露されており<ref>{{Cite web|date=2018-06-02|url=https://gigazine.net/news/20180602-google-project-maven-mail-leaked/|title=GoogleのAIを軍事活用する極秘計画「Project Maven」の関係者による生々しい内部メールが流出|publisher=[[Gigazine]]|accessdate=2019-04-16}}</ref>、2018年12月の[[アメリカ合衆国議会]]の公聴会では、同様に暴露された中国政府に協力する秘密計画「[[ドラゴンフライ (検索エンジン)|ドラゴンフライ計画]]」とともに、人工知能を用いた兵器開発や人権侵害は拒否するとGoogleが誓った、2018年6月の人工知能開発6原則との整合性で、追及を受けた<ref>{{Cite web|date=2018-12-30|url=https://www.gizmodo.jp/2018/12/the-biggest-tech-lies-of-2018.html|title=2018年テック界の嘘ワースト8|publisher=[[ギズモード]]|accessdate=2019-04-16}}</ref>。
+
+中国人民解放軍の戦闘機[[J-20]]の標的選択支援[[アルゴリズム]]に、GoogleのAI研究者が関わったと報道された際は「AIではなく、統計学的なモデリング」と否定した<ref>{{Cite web|date=2019-07-04|url=https://www.scmp.com/news/china/science/article/3017141/google-denies-link-chinas-military-over-touch-screen-tools-may|title=Google denies link to China’s military over touch-screen tools that may help PLA pilots|publisher=[[サウス・チャイナモーニング・ポスト]]|accessdate=2019-07-05}}</ref>。また、Microsoftが中国軍の教育機関とAIの共同研究を発表した際も、同様に波紋を呼んだ<ref>{{cite web|title=[FT]マイクロソフト、AI研究で中国軍部と協力|url=https://www.nikkei.com/article/DGXMZO43606560R10C19A4000000/|website=[[日本経済新聞]]|accessdate=2019-04-11|date=2019-04-16}}</ref>。
+
+2019年11月に[[マーク・エスパー]]国防長官は、中華人民共和国がAIによって新しい監視国家を構築しているだけでなく、中東で[[翼竜 (航空機)|翼竜]]や[[彩虹 (航空機)|彩虹]]など[[無人攻撃機]]を大量に拡散させて、AIで自律的に攻撃するドローン兵器も販売していることに警鐘を鳴らした<ref>{{cite web|title=SecDef: China Is Exporting Killer Robots to the Mideast|url=https://www.defenseone.com/technology/2019/11/secdef-china-exporting-killer-robots-mideast/161100/|website=Defense One|accessdate=2019-11-05|date=2019-11-10}}</ref>。
+
+ロシアと中国は、既に実用化してるとされる[[ハッキング]]の自動化の他<ref>{{Cite web|url=https://special.sankei.com/a/international/article/20190117/0001.html|title=「ＡＩハッカー」の脅威、中国すでに実用化か|publisher=[[産経デジタル|産経ニュース]]|accessdate=2019-01-17|date=2019-01-28}}</ref>、特定の個人を攻撃したり[[ディープフェイク]]でなりすましたり、ボット投稿により世論を操る等の懸念が挙げられている<ref>{{Cite web|url=http://www.bbc.com/japanese/features-and-analysis-43139275|title=人工知能はもう悪用される段階に 専門家警告|publisher=BBCニュース|accessdate=2018-03-03|date=2018-02-21}}</ref>。
+
+=== 雇用問題 ===
+過去において、[[技術革新]]は総雇用を減らすよりもむしろ増やす傾向があったが、[[経済学者]]はAIについて「我々は未知の領域にいる」と認めている{{sfnp|IGM Chicago|2017}}。経済学者の調査では、[[ロボット]]やAIの使用の増加が長期的な失業の大幅な増加を引き起こすかどうかについて意見が分かれたが、[[生産性]]の向上が[[再分配]]に向けられれば純益となり得ることに概ね同意している{{sfnp|Arntz|Gregory|Zierahn|2016|p=33}}<ref>
+{{Harvtxt|Lohr|2017}};
+{{Harvtxt|Frey|Osborne|2017}};
+{{Harvtxt|Arntz|Gregory|Zierahn|2016|p=33}}
+</ref>。
+
+以前の自動化の波とは異なり、多くの[[中産階級]]はAIによって失業に追い込まれるかもしれないという見解もあり、『[[エコノミスト]]』誌は、[[産業革命]]の間に[[蒸気機関]]が[[ブルーカラー]]労働者の失業をもたらしたことと同様に、AIが[[ホワイトカラー]]を失業に追い込むという懸念を「真剣に考える価値がある」としている{{sfnp|Morgenstern|2015}}。失業のリスクが非常に高い仕事は[[パラリーガル]]から[[ファーストフード]]の調理担当までにわたるが、一方で個人向けの[[ヘルスケア]]から[[聖職者]]に至るケア関連の専門職で雇用が増加すると想定される<ref>{{Harvtxt|Mahdawi|2017}}; {{Harvtxt|Thompson|2014}}</ref>。
+
+[[オックスフォード大学]]のマイケル・オズボーン博士が[[2013年]]に発表した論文によれば、人工知能やロボット等による代替可能性が高い労働人口が日本で約49%いること（アメリカは約47%、イギリスは約35%）、[[2030年代]]までに[[ファストフード]]店で料理をする従業員が、[[ロボット]]やAIに取って代わられる可能性が81%と高いことを指摘されている<ref>{{Cite news|author=湯田昌之|title=賃上げならロボ導入？　米マクドナルド「時給15ドルの戦い」|newspaper=日本経済新聞|language=日本語|date=2016-05-27|url=https://www.nikkei.com/article/DGXLASDZ27H3C_X20C16A5000000/|accessdate=2019-09-30}}</ref><ref>{{Cite journal|author=Michael A. Osborne|author2=Carl Benedikt Frey|title=THE FUTURE OF EMPLOYMENT: HOW SUSCEPTIBLE ARE JOBS TO COMPUTERISATION?(未来の雇用:コンピュータ化により、どのように仕事へ影響を与えるのか。)|pages=70|publisher=Oxford Martin Programme on Technology and Employment(オックスフォード・マーティンのテクノロジーと雇用に関するプログラム) |date=2013-09-13|language=英語|url=https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/|accessdate=2019-10-06}}</ref><ref>{{Cite report|author=上田 恵陶奈|date=2017-12-05|title=AIと共存する未来～AI時代の人材～|url=https://www.mhlw.go.jp/file/05-Shingikai-12602000-Seisakutoukatsukan-Sanjikanshitsu_Roudouseisakutantou/0000186905.pdf|publisher=株式会社[[野村総合研究所]]|format=PDF|accessdate=2020-08-30}}</ref>。
+
+[[2022年]]に[[Stable Diffusion]]をベースにした[[画像生成AI]]が出現すると、AIアートが[[イラスト]]や[[デザイン]]の分野で働くアーティストを代替する可能性が危惧された<ref>{{cite web|date=10 August 2022|title=AI-generated digital art spurs debate about news illustrations|url=https://www.axios.com/2022/08/10/artificial-intelligence-digital-art-journalism|author-last=King|author-first=Hope|access-date=2 October 2022|work=Axios}}</ref><ref>{{cite web|date=16 September 2022|title=AI Is Coming For Commercial Art Jobs. Can It Be Stopped?|url=https://www.forbes.com/sites/robsalkowitz/2022/09/16/ai-is-coming-for-commercial-art-jobs-can-it-be-stopped/?sh=5e6784c654b0|author-last=Salkowitz|author-first=Rob|access-date=2 October 2022|work=Forbes}}</ref>。[[ポーランド]]のデジタルアーティストである[[グレッグ・ルトコフスキ]]は自身の画風を模倣するように調整されたAIによって、被害を受けていることを明らかにした<ref name="technologyreview">{{cite web|date=16 September 2022|title=This artist is dominating AI-generated art. And he's not happy about it.|url=https://www.technologyreview.com/2022/09/16/1059598/this-artist-is-dominating-ai-generated-art-and-hes-not-happy-about-it/|author-last=Heikkilä|author-first=Melissa|access-date=2 October 2022|work=MIT Technology Review}}</ref>。AIが生成した画像のアップロードを禁止するイラスト投稿サイトも増加している<ref name=":12">{{Cite web |title=「AIが生成したイラストの投稿禁止」をイラスト投稿サイトが次々に決定し始めている |url=https://gigazine.net/news/20220914-online-art-communities-banning-ai-images/ |website=GIGAZINE |access-date=2023-02-08 |language=ja}}</ref>。
+
+アメリカでは[[声優]]を模倣する[[合成音声]]を生成するAIの教師データとして声の利用を契約で迫る例が増えており、業界の全分野を失業に追い込む懸念がある。[[Apex Legends]]などの人気ゲームに出演する声優のフリーダ・ウォルフは合意や追加の補償なしに自身の音声データを利用する[[搾取]]に繋がるとして懸念を表明したほか、[[フォートナイト]]などの声優であるサラ・エルマレは、自身の声を模倣した音声合成AIによって不本意な内容のセリフが読み上げられることの可能性を問題視した<ref name=":11">{{Cite web |title=声優に「録音した音声でAIに合成音声を生成させることを認める」契約を迫るケースが増加、声優や組合からは反対の声 |url=https://gigazine.net/news/20230208-voice-actor-vs-ai/ |website=GIGAZINE |access-date=2023-02-08 |language=ja}}</ref><ref>https://www.vice.com/en/article/5d37za/voice-actors-sign-away-rights-to-artificial-intelligence
+</ref>。
+
+職業を構成する[[タスク]]（業務）単位でみた場合に、70%超えのタスクが自動化される職業は9％程度（日本の場合は7%程度）にとどまるとの研究結果もある。またAIや機械化によって雇用が奪われるという主張もあるが、それらの技術によってタスク量が減少するが、AIや機械化を導入したり、維持したりする仕事や、それらの技術により新たな仕事が生まれることにより、雇用が生み出される可能性もある<ref>{{Cite web |title=https://jp.coursera.org/lecture/ai-business-future-of-work/man-or-machine-with-joakim-wernberg-BCleu |url=https://jp.coursera.org/lecture/ai-business-future-of-work/man-or-machine-with-joakim-wernberg-BCleu |website=Coursera |access-date=2022-12-27 |language=ja}}</ref>。一方で、中程度の技能を有するルーティン業務が減少し、専門技能が求められない低スキルの仕事と、専門知識や高度な技能が求められる仕事へと2極化していき、[[経済格差]]が拡大していくとの予測もある<ref>{{Cite report|author=総務省|authorlink=総務省|date=2018-07|title=2018年版情報通信白書　第1部　特集　人口減少時代のICTによる持続的成長　第5節　ICTの進化によるこれからのしごと（1）職業の変化|url=https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h30/html/nd145210.html|accessdate=2020-06-05}}</ref><ref>{{Cite journal|author=岩本 晃一|author2=田上 悠太|title=人工知能AI等が雇用に与える影響；日本の実態|journal=ポリシー・ディスカッション・ペーパー（日本語）|volume=18-P-009|pages=1-17|publisher=経済産業研究所|date=2018-05|language=日本語|url=https://www.rieti.go.jp/jp/publications/summary/18050004.html|accessdate=2020-06-05}}</ref><ref>{{Cite journal|author=Melanie Arntzi|author2=Terry Gregoryi|author3=Ulrich Zierahni|title=The Risk of Automation for Jobs in OECD Countries（OECD諸国での自動化による雇用リスク）|journal=OECD Social, Employment and Migration Working Papers（OECD　社会・雇用・移住のワーキングペーパー）|volume=189|pages=1-34|publisher=OECD|date=2016-5-14|language=英語|url=https://www.oecd-ilibrary.org/social-issues-migration-health/the-risk-of-automation-for-jobs-in-oecd-countries_5jlz9h56dvq7-en|issn=1815199X|doi=10.1787/1815199X|accessdate=2020-06-05}}</ref>。
+
+=== 法律・規制 ===
+[[差別]]や[[ハラスメント]]など、AIの結果を盾にとって不正行為を行い、[[法的責任]]を逃れようとする悪用が懸念されている。AIの出力結果は入力値を改竄したり、恣意的にバイアスを含むような訓練データを準備することなどの手法で操作できるとされる。また、AIの出した良くない出力が、悪用の結果なのか、誤用の結果なのか、AIの学習機能によって予測できなかった出力なのか、十分に判断する技術も未だ開発されていない。AIは[[性善説]]によって開発されてきたが、AIの普及に伴い不正目的での開発や悪用も視野に入れての開発や運用が要請される。技術的な対策だけでは悪用・誤用を十分に防ぐことは難しいため、[[法制度]]・[[社会制度]]による救済手段の整備が求められる<ref name="nakagawa-aiethics">中川裕志「AI倫理」『機械学習工学』講談社 2022年 ISBN 978-4-06-528586-2 pp.199-241</ref>。
+
+欧州のAI規制はこのような悪用の懸念を反映しており、[[GDPR]]22条では「計算機(AI)のプロファイリングから自動的に出てきた決定に服さなくてよい権利」を明記している。この方法として、「プロファイリングに使用した入力データを開示させる」「出力された決定に対する説明を人間に果たさせる」の２点が報告された<ref name="nakagawa-aiethics">中川裕志「AI倫理」『機械学習工学』講談社 2022年 ISBN 978-4-06-528586-2 pp.199-241</ref>。
+
+しかし、前者は[[守秘義務]]や[[企業秘密]]があるため実効性は疑問視されており、後者も不十分とされているため、「IEEE EAD version2」では説明可能なAIとして、AIの推論の道筋と用いた入力データを明確化すること、AIの出した結果に疑問が生じた場合に[[内部告発]]を可能にする制度を確保すること、AIが悪用された際の救済策を国家レベルで立法化すること、[[保険]]などの経済的救済策の整備の4点が明記された<ref name="nakagawa-aiethics">中川裕志「AI倫理」『機械学習工学』講談社 2022年 ISBN 978-4-06-528586-2 pp.199-241</ref>。
+
+ほかにも、AIに関する規制や政策の状況は、世界各地で新たな問題となっている<ref>
+Regulation of AI to mitigate risks:
+* {{Harvtxt|Berryhill|Heang|Clogher|McBride|2019}}
+* {{Harvtxt|Barfield|Pagallo|2018}}
+* {{Harvtxt|Iphofen|Kritikos|2019}}
+* {{Harvtxt|Wirtz|Weyerer|Geyer|2018}}
+* {{Harvtxt|Buiten|2019}}
+</ref>。2016年から2020年の間に、30カ国以上がAIに関する専用の戦略を採用していた{{sfnp|UNESCO|2021}}。ほとんどの[[EU]]加盟国がAI国家戦略を公開しており、[[カナダ]]、[[中国]]、[[インド]]、[[日本]]、[[モーリシャス]]、[[ロシア]]、[[サウジアラビア]]、[[アラブ首長国連邦]]、[[米国]]、[[ベトナム]]も同様であった。また、[[バングラデシュ]]、[[マレーシア]]、[[チュニジア]]を含む第三国も独自のAI戦略を構築している{{sfnp|UNESCO|2021}}。 2020年6月にGPAIが発足し、AI技術に対する国民の期待と信頼を確保するために、AIが[[人権]]と[[民主主義]]の価値観に従って開発される必要性を表明した{{sfnp|UNESCO|2021}}。[[2021年]]11月には、[[ヘンリー・キッシンジャー]]、[[エリック・シュミット]]、およびダニエル・ハットンロッハーがAIを規制する政府委員会の招集を求める共同声明を発表した<ref>{{Cite news|last=Kissinger|first=Henry|author-link=Henry Kissinger|date=1 November 2021|title=The Challenge of Being Human in the Age of AI|work=[[The Wall Street Journal]]|url=https://www.wsj.com/articles/being-human-artifical-intelligence-ai-chess-antibiotic-philosophy-ethics-bill-of-rights-11635795271}}</ref>。
+
+2022年に[[Stable Diffusion]]などの既存の画像から絵柄などを学習して自動生成するAIが登場すると、著作権に関する問題が発生した<ref name=":4">{{Cite web |title=絵師の“AI学習禁止宣言”に意味はあるのか？ AIに詳しい弁護士に聞いてみた |url=https://www.itmedia.co.jp/news/articles/2209/08/news054.html |website=ITmedia NEWS |access-date=2022-09-08 |language=ja}}</ref>。[[画像生成AI]]は、アーティストがWeb上に公開した作品をスクレイピングして教師データを確保しているが、作品を制作したアーティストの同意や許可を得ずに行われることが多い。そのため、画像生成AIが[[著作権法]]に違反しているのではないかという疑問が投げかけられた<ref name="gizmodo-lawsuit">https://www.gizmodo.jp/2023/02/ai-image-gen-getty-lawsuit.html</ref>。
+
+[[オレゴン州]]在住の[[漫画家]]サラ・アンダーソンら3人の原告は[[AIアート]]の違法性を訴え、[[オープンソース]]の画像生成AI・[[Stable Diffusion]]の開発元であるStability AIとStable Diffusionを利用した画像生成サービスを展開する[[Midjourney]]、[[DeviantART]]の3社に対して訴訟を提起した。画像生成AIは、教師データを確保するためにインターネット上から何十億もの画像をスクレイピングしているが、その画像の大半は[[著作権]]で保護されており、同意も得ていないため、画像生成AIには倫理的・法的問題が生じている。アンダーソンは『[[ワシントン・ポスト]]』紙の取材に対し、「AIは私の作品を盗んだ」と答えた一方、Stability AI、Midjourney、DeviantARTの3社はいずれも取材を拒否した<ref name="wspost-ai-in-illustration">{{Cite web |title=Artists are alarmed by AI — and they’re fighting back|url=https://www.washingtonpost.com/comics/2023/02/14/ai-in-illustration/|website=The Washington Post|access-date=2023-2-18|language=en}}</ref>。
+
+全米漫画家協会会長のジェイソン・チャットフィールドは、多くのアーティストが画像生成AIの開発元企業に対し、[[同意]]と[[報酬]]、[[クレジットタイトル|クレジット]]の付与を求めているとし、[[立法]]の遅れが予想されるため、技術の倫理的使用のために公開[[討論]]や[[訴訟]]が必要になると主張したほか、イラストレーター協会の元会長であるティム・オブライエンは、アーティストの名前をプロンプトとして使用するような、画像生成AIを許可すべきではないと主張した<ref name="wspost-ai-in-illustration">{{Cite web |title=Artists are alarmed by AI — and they’re fighting back|url=https://www.washingtonpost.com/comics/2023/02/14/ai-in-illustration/|website=The Washington Post|access-date=2023-2-18|language=en}}</ref>。
+
+[[計算機科学]]者で[[プリンストン大学]]教授のアーバインド・ナラヤナンは、AIとクリエイターの対立について同様の意見を展開し、「画像生成AIを開発する企業は同意や[[補償]]なしに訓練用画像を収集するなど、アーティストに敵対するような方法で開発・デプロイを行っている」とした上で、「特定のアーティストの画風に寄せた画像生成ツールを許容することは、アーティストの労働や視覚的な独自性を明確に流用しているケースのように思える」と述べ、「開発者は、アーティストを訓練用の素材ではなく、パートナーや利害関係者として扱うこともできたはずだ」と画像生成AIの現状に異を唱えた上で、「この現状が必然だったと主張する人物は、企業が[[責任]]ある技術開発をできなかったことの言い訳をしているに過ぎない」と結論付けた<ref name="wspost-ai-in-illustration">{{Cite web |title=Artists are alarmed by AI — and they’re fighting back|url=https://www.washingtonpost.com/comics/2023/02/14/ai-in-illustration/|website=The Washington Post|access-date=2023-2-18|language=en}}</ref>。
+
+[[英国]]の[[ストックフォト]]企業である[[Getty Images]]も画像生成AIが膨大な量の画像を[[盗用]]し、知的財産権を侵害しているとして[[Stable Diffusion]]の提供会社への損害賠償請求訴訟を提起した。画像生成AIはアーティストの[[知的財産]]である作品をベースに画像を生成するが、その作品の作者には補償されないし、著作権者の許可も得ていないことが問題視されている<ref name="gizmodo-lawsuit">https://www.gizmodo.jp/2023/02/ai-image-gen-getty-lawsuit.html</ref>。日本の[[著作権法]]では学習データとしての利用は合法であるが、他者が著作権を有する絵画を学習した人工知能に対し、学習したものと同等の画像の出力を指示した場合には著作権侵害となる<ref name=":4" />。
+
+なお、[[アメリカ合衆国著作権局|米国著作権局]]によれば、AIによって生成されたアートは著作権で保護されることはない。アーティストが使う他のツールと比較して、テキストプロンプトによる画像生成AIの具体的な出力は予測不可能であるため、著作権上の扱いが異なるとされる<ref name="reuters-ai-created-images-lose-us-copyrights">{{Cite web|url=https://www.reuters.com/legal/ai-created-images-lose-us-copyrights-test-new-technology-2023-02-22/|title=AI-created images lose U.S. copyrights in test for new technology|website=Reuters|access-date=2023-2-22}}</ref><ref name="verge-ai-created-images">{{Cite web|url=https://www.theverge.com/2023/2/22/23611278/midjourney-ai-copyright-office-kristina-kashtanova|title=The US Copyright Office says you can’t copyright Midjourney AI-generated images|website=The Verge|access-date=2023-2-22}}</ref><ref>{{Cite web|url=https://www.smithsonianmag.com/smart-news/us-copyright-office-rules-ai-art-cant-be-copyrighted-180979808/|title=U.S. Copyright Office Rules A.I. Art Can't Be Copyrighted|first1=Smithsonian|last1=Magazine|first2=Jane|last2=Recker|website=Smithsonian Magazine|access-date=2023-2-20}}</ref><ref>{{Cite web|url=https://www.engadget.com/us-copyright-office-art-ai-creativity-machine-190722809.html|title=You can’t copyright AI-created art, according to US officials|website=Engadget|access-date=2023-2-20}}</ref>。
+
+[[OpenAI]]が公開する[[ChatGPT]]も、文章生成に[[報道機関]]の記事を無報酬で使用しているとして批判を受けている。『[[ウォール・ストリート・ジャーナル]]』紙の発行元である[[ダウ・ジョーンズ]]のジェイソン・コンティは「人工知能の訓練にウォール・ストリート・ジャーナルの記事を使う場合は、ダウ・ジョーンズから権利をきちんとライセンスすべきである」と述べ、「OpenAIはダウ・ジョーンズとそのような契約を結んでいない」と批判した。コンティは「ジャーナリストの記事の悪用を真剣に受け止めており、この状況を精査している」と付け加え、懸念を表明している<ref>{{Cite web |title=OpenAI Is Faulted by Media for Using Articles to Train ChatGPT|url=https://www.bloomberg.com/news/articles/2023-02-17/openai-is-faulted-by-media-for-using-articles-to-train-chatgpt|website=Bloomberg|access-date=2023-03-02}}</ref>。
+
+法律事務など、法的規制のあるサービスをAIで代行する行為に関しては法律が定まっていない。2023年、[[弁護士ドットコム]]では過去の相談事例を学習させた[[ChatGPT]]による法律相談サービスを開始すると発表したが、[[弁護士法]]では[[弁護士]]や[[弁護士法人]]など弁護士資格を有する人間のみを想定しており、AIがチャットで相談に応じると法律事務とみなされる可能性があるため、サービスを無償で提供するとした<ref name=":14">{{Cite web |title=「チャットGPT」で法律相談 弁護士ドットコム、今春開始へ：朝日新聞デジタル |url=https://www.asahi.com/articles/ASR2F5RHLR2FULFA00V.html?iref=ogimage_rek |website=朝日新聞デジタル |date=2023-02-13 |access-date=2023-02-14 |language=ja}}</ref>。
+
+== 世界の研究開発事例 ==
+[[Google]]はアレン脳科学研究所と連携し脳スキャンによって生まれた大量のデータを処理するためのソフトウェアを開発している。2016年の時点で、Googleが管理しているBrainmapのデータ量はすでに1[[ゼタバイト]]に達しているという<ref>http://www.fiercebiotech.com/data-management/google-joins-brain-initiative-to-help-petabyte-scale-data-sets</ref><ref>https://news.mynavi.jp/techplus/article/20160810-isc2016_braininitiative/</ref>。Googleは、ドイツのマックスプランク研究所とも共同研究を始めており、脳の電子顕微鏡写真から神経回路を再構成するという研究を行っている<ref>https://news.mynavi.jp/techplus/article/20170911-hotchips29_google/2</ref>。
+
+中国では2016年の第13次[[5カ年計画]]からAIを国家プロジェクトに位置づけ<ref>{{cite news|date=2016-07-28|url=http://j.people.com.cn/n3/2016/0728/c95952-9092181.html|title=第13次五カ年計画、中国の技術革新計画が明らかに|publisher=[[人民網]]|accessdate=2018-02-07}}</ref>、脳研究プロジェクトとして{{仮リンク|中国脳計画|en|China Brain Project}}も立ち上げ<ref>Poo, Mu-ming; Du, Jiu-lin; Ip, Nancy Y; Xiong, Zhi-Qi; Xu, Bo and Tan, Tieniu (2016), ‘China Brain Project: Basic Neuroscience, Brain Diseases, and Brain-Inspired Computing’, Neuron, 92 (3), 591-96.</ref>、官民一体でAIの研究開発を推進している<ref>{{cite news|date=2017-12-08|url=https://www.nikkei.com/article/DGKKZO24371260X01C17A2FFE000/|title=オール中国でＡＩ推進|publisher=[[日本経済新聞]]|accessdate=2018-02-07}}</ref>。中国の教育機関では18歳以下の天才児を集めて公然とAI兵器の開発に投じられてもいる<ref>{{cite news|url=https://www.newsweekjapan.jp/stories/world/2018/11/ai-41.php|title=中国が18歳以下の天才27人を選抜、AI兵器の開発に投入|publisher=[[ニューズウィーク]]|date=2018-11-09|accessdate=2018-11-29}}</ref>。[[マサチューセッツ工科大学]]（MIT）の{{仮リンク|エリック・ブリニョルフソン|en|Erik Brynjolfsson}}教授や{{仮リンク|情報技術イノベーション財団|en|Information Technology and Innovation Foundation}}などによれば、中国では[[プライバシー]]意識の強い欧米と比較してAIの研究や新技術の実験をしやすい環境にあるとされている<ref name=wsj1837>{{cite news|date=2018-02-26|url=http://jp.wsj.com/articles/SB12346302927663484593304584068193706085748|title=中国の一党独裁、AI開発競争には有利|publisher=[[ウォール・ストリート・ジャーナル]]|accessdate=2018-03-07}}</ref><ref>{{cite news|date=2018-01-19|url=http://jp.wsj.com/articles/SB10806998528272603825204583646830641781270|title=AI開発レースで中国猛追、米企業のリード危うし|publisher=ウォール・ストリート・ジャーナル|accessdate=2018-02-07}}</ref><ref>{{cite news|date=2018-02-03|url=https://wpb.shueisha.co.jp/news/technology/2018/02/03/99109/|title=中国の「超ＡＩ監視社会」－－新疆ウイグル自治区では“体内”まで監視！|publisher=[[集英社]]|accessdate=2018-02-07}}</ref>。日本でスーパーコンピュータの研究開発を推進している齊藤元章もAIの開発において中国がリードする可能性を主張している<ref>{{Cite web|url=http://www.ube-ind.co.jp/ube/jp/ad/science/science_371.html|title=Green500の1位から見たコンピューター・ヘゲモニー|publisher=[[宇部興産]]|accessdate=2018-03-07}}</ref>。世界のディープラーニング用計算機の4分の3は中国が占めてるともされる<ref>{{cite news|date=2018-01-20|url=http://japanese.engadget.com/2018/01/19/300m/|archiveurl=https://web.archive.org/web/20200313223143/http://japanese.engadget.com/2018/01/19/300m/|archivedate=2020-03-13|deadlinkdate=2022-05-01|title=中国、新疆ウイグル自治区で顔認識システム運用をテスト。指定地域から300m以上離れると当局に警告|publisher=[[Engadget]]|accessdate=2018-02-07}}</ref>。米国政府によれば、2013年からディープラーニングに関する論文数では中国が米国を超えて世界一となっている<ref>{{cite news|date=2017-08-16|url=https://wired.jp/2017/08/16/america-china-ai-ascension/|title=中国が「AI超大国」になる動きは、もはや誰にも止められない|publisher=[[WIRED]]|accessdate=2018-02-07}}</ref>。{{仮リンク|FRVT|en|Face Recognition Vendor Test}}や[[ImageNet]]などAIの世界的な大会でも中国勢が上位を独占している<ref>{{cite news|date=2018-11-24|url=http://japanese.china.org.cn/culture/2018-11/24/content_74198278_0.htm|title=世界顔認証ベンチマークテストの結果が発表 中国がトップ5独占|publisher=[[中国網]]|accessdate=2018-12-03}}</ref><ref>{{cite news|date=2017-08-08|url=https://forbesjapan.com/articles/detail/17213|title=AIの世界王者決定戦「ImageNet」で中国チームが上位を独占|publisher=フォーブス|accessdate=2018-02-11}}</ref>。大手AI企業Google、[[マイクロソフト]]、[[Apple]]などの幹部でもあった[[台湾系アメリカ人]]科学者の[[李開復]]は中国がAIで覇権を握りつつあるとする『{{仮リンク|AI超大国：中国、シリコンバレーと新世界秩序|en|AI Superpowers}}』を著してアメリカの政界やメディアなどが取り上げた<ref>{{cite news|date=2017-08-08|url=https://www.wired.com/story/ai-cold-war-china-could-doom-us-all/|title=THE AI COLD WAR THAT COULD DOOM US ALL|publisher=[[フォーブス (雑誌)|フォーブス]]|accessdate=2018-02-07}}</ref><ref>{{cite news |url=https://www.politico.com/interactives/2018/politico-50-book-picks/ |title=The POLITICO 50 Reading List |author=Politico Magazine Staff |newspaper=[[Politico]] |date=September 4, 2018 |accessdate=October 9, 2018}}</ref>。
+
+フランス大統領[[エマニュエル・マクロン]]はAI分野の開発支援に向け5年で15億ドルを支出すると宣言し<ref>{{Cite news|title=仏マクロン大統領が「AI立国」宣言、無人自動運転も解禁へ|date=2018-03-30|url=https://forbesjapan.com/articles/detail/20401|accessdate=2018-04-05|language=ja-JP|work=Forbes JAPAN（フォーブス ジャパン）}}</ref>、AI研究所をパリに開き、フェイスブック、グーグル、サムスン、DeepMind、富士通などを招致した。イギリスともAI研究における長期的な連携も決定されている。EU全体としても、「Horizon 2020」計画を通じて、215億ユーロが投じられる方向。韓国は、20億ドルを2022年までに投資をする。6つのAI機関を設立し褒賞制度も作られた。目標は2022年までにAIの世界トップ4に入ることだという<ref>https://www.sbbit.jp/article/cont1/35264?page=2</ref>。
+
+日経新聞調べによると、国別のAI研究論文数は1位米国、2位中国、3位インド、日本は7位だった<ref>{{cite news|date=2017-11-01|url=https://www.nikkei.com/article/DGXMZO22943380R31C17A0TJU200/|title=人工知能の論文数、米中印の３強に |publisher=日本経済新聞|accessdate=2018-02-07}}</ref>。
+
+== 歴史 ==
+{{出典の明記|section=1|date=2018-08}}
+{{Main|人工知能の歴史}}AIの構築が長い間試みられてきているが、シンボルグラウンディング問題とフレーム問題の解決が大きな壁となってきた。
+
+=== 初期 ===
+17世紀初め、[[ルネ・デカルト]]は、動物の身体がただの複雑な機械であると提唱した（[[機械論]]）。[[ブレーズ・パスカル]]は1642年、最初の[[歯車式計算機|機械式計算機]]を製作した。[[チャールズ・バベッジ]]と[[エイダ・ラブレス]]はプログラム可能な機械式計算機の開発を行った。
+
+[[バートランド・ラッセル]]と[[アルフレッド・ノース・ホワイトヘッド]]は『数学原理』を出版し、形式論理に革命をもたらした。[[ウォーレン・マカロック]]と[[ウォルター・ピッツ]]は「神経活動に内在するアイデアの論理計算」と題する論文を1943年に発表し、ニューラルネットワークの基礎を築いた。
+
+=== 1900年代後半 ===
+1950年代になるとAIに関して活発な成果が出始めた。1956年夏、[[ダートマス大学]]が入居している建物の最上階を引き継いだ数学と計算機科学者のグループの一人である若き教授ジョン・マッカーシーはワークショップでのプロポーザルで "Artificial Intelligence" という言葉を作り出している{{sfn |Spectrum58-10 |2021 |p=27}}。ワークショップの参加者は、[[オリバー・セルフリッジ]]、[[レイ・ソロモノフ]]、マービン・ミンスキー、[[クロード・シャノン]]、[[ハーバート・サイモン]]、[[アレン・ニューウェル]]などであった{{sfn |Spectrum58-10 |2021 |p=29}}。ジョン・マッカーシーはAIに関する最初の会議で「人工知能{{efn|{{lang-en-short|artificial intelligence}}}}」という用語を作り出した。彼はまたプログラミング言語{{lang|en|LISP}}を開発した。知的ふるまいに関するテストを可能にする方法として、[[アラン・チューリング]]は「[[チューリングテスト]]」を導入した。[[ジョセフ・ワイゼンバウム]]は{{lang|en|ELIZA}}を構築した。これは[[来談者中心療法]]を行う[[おしゃべりロボット]]{{efn|{{lang-en-short|chatterbot}}}}である。
+
+1956年に行われた、ダートマス会議開催の提案書において、人類史上、用語として初めて使用され、新たな分野として創立された。
+
+1960年代と1970年代の間に、[[ジョエル・モーゼス]]は {{読み仮名|{{lang|en|[[Macsyma]]}}|マクシマ}}プログラム{{efn|数学における最初の成功した知識ベースプログラム。}}中で積分問題での記号的推論のパワーを示した。[[マービン・ミンスキー]]と[[シーモア・パパート]]は『パーセプトロン』を出版して単純なニューラルネットの限界を示し、{{仮リンク|アラン・カルメラウアー|en|Alain Colmerauer}}はプログラミング言語 {{lang|en|[[Prolog]]}} を開発した。{{仮リンク|テッド・ショートリッフェ|en|Edward H. Shortliffe}}は医学的診断と療法におけるルールベースシステムを構築し、[[知識表現]]と推論のパワーを示した。これは、最初のエキスパートシステムと呼ばれることもある。[[ハンス・モラベック]]は、障害物があるコースを自律的に走行する最初のコンピューター制御の乗り物を開発した。
+
+1980年代に、ニューラルネットワークは[[バックプロパゲーション]]アルゴリズムによって広く使われるようになった。
+
+また、この時代に[[ロドニー・ブルックス]]が、知能には身体が必須との学説（身体性）を提唱した。
+
+1990年代はAIの多くの分野で様々なアプリケーションが成果を上げた。特に、ボードゲームでは目覚ましく、1992年に[[IBM]]は世界チャンピオンに匹敵するバックギャモン専用コンピュータ・TDギャモンを開発し、IBMのチェス専用コンピュータ・[[ディープ・ブルー (コンピュータ)|ディープ・ブルー]]は、1997年5月に[[ガルリ・カスパロフ]]を打ち負かし、同年8月にはオセロで[[日本電気]]のオセロ専用コンピュータ・[[ロジステロ]]に世界チャンピオンの[[村上健]]が敗れた<ref>{{Cite web|url=https://nlab.itmedia.co.jp/nl/articles/1710/06/news013.html
+|title=人間VSコンピュータオセロ 衝撃の6戦全敗から20年、元世界チャンピオン村上健さんに聞いた「負けた後に見えてきたもの」 |publisher=[[ITmedia]]|date=2017-10-21|accessdate=2018-12-25}}</ref>。[[国防高等研究計画局]]は、最初の[[湾岸戦争]]においてユニットをスケジューリングするのにAIを使い、これによって省かれたコストが1950年代以来のAI研究への政府の投資全額を上回ったことを明らかにした。日本では[[甘利俊一]]らが精力的に啓蒙し、優秀な成果も発生したが、論理のブラックボックス性が指摘された。
+
+[[1998年]]には[[非構造化データ]]形式の[[国際規格]]である[[Extensible Markup Language|XML]]が提唱されたが、ここから[[World Wide Web|Web]]上の非構造化データに対して、アプリケーション別に適した意味付けを適用し、処理を行わせる試みが開始された。同年に、[[World Wide Web Consortium|W3C]]の[[ティム・バーナーズ＝リー]]により、Webに知的処理を行わせる[[セマンティック・ウェブ]]が提唱された。この技術はWeb上のデータに意味を付加して、コンピュータに知的処理を行わせる方法を国際的に規格化するものである。この規格には知識工学におけるオントロジーを表現するデータ形式の[[OWL]]も含まれていることから、かつて流行した[[エキスパートシステム]]の亜種であることが分かる。2000年代前半に規格化が完了しているが、Web開発者にとっては開発工数に見合うだけのメリットが見出せなかったことから、現在も普及はしていない。
+
+==== 日本における第二次AIブーム ====
+日本においてはエキスパートシステムの流行の後にニューロファジィが流行した。しかし、研究が進むにつれて計算リソースやデータ量の不足，シンボルグラウンディング問題，フレーム問題に直面し、産業の在り方を激変させるようなAIに至ることは無く、ブームは終焉した。
+
+===== エキスパートシステム（知識工学の応用） =====
+1980年代に入って、大企業の研究所を中心に、知識工学に基づくエキスパートシステムが多数提案されるようになり、エキスパートシステムを専門とするAIベンチャーも次々と立ち上がった。その流行から生まれた究極のプロジェクトとして第五世代コンピュータが挙げられる。
+
+====== 第五世代コンピュータ（高性能なProlog推論マシン） ======
+1982年から1992年まで日本は国家プロジェクトとして570億円を費やして[[第五世代コンピュータ]]の研究を進めるも、採用した知識工学的手法では膨大なルールの手入力が必要で、専門家間で専門知識の解釈が異なる場合には統一したルール化が行えない等の問題もあり、実用的なエキスパートシステムの実現には至らなかった。実現した成果物はPrologの命令を直接CPUのハードウェアの機構で解釈して高速に実行する、並列型のProlog専用機であるが、商業的な意味で応用先が全く見つからなかった。
+
+===== ニューロファジィ<ref name=":0" />=====
+1980年代後半から1990年代中頃にかけて、従来から電子制御の手法として用いられてきたON/OFF制御，[[PID制御]]，現代制御の問題を克服するため、知的制御が盛んに研究され、知識工学的なルールを用いる[[ファジィ制御]]，データの特徴を学習して分類する[[ニューラルネットワーク]]，その2つを融合したニューロファジィという手法が日本を中心にブームを迎えた。1987年には[[仙台市地下鉄|仙台市において開業した地下鉄]]の[[自動列車運転装置|ATO]]に採用<ref>{{Cite web|url=http://www.hitachihyoron.com/jp/pdf/1988/07/1988_07_05.pdf|title=仙台市地下鉄の鉄道トータルシステム|accessdate=2020年11月23日|publisher=日立製作所}}</ref>され、バブル期の高級路線に合わせて、白物家電製品でもセンサの個数と種類を大幅に増やし、多様なデータを元に運転を最適化するモデルが多数発売され始めた。
+
+ファジィについては、2018年までに日本が世界の1/5の特許を取得している事から、日本で特に大きなブームとなっていたことが分かっている<ref name=":1" />。現在の白物家電ではこの当時より更に発展した制御技術が用いられているが、既に当たり前のものになり、利用者には意識されなくなっている。ニューロファジィがブームになった[[1990年代]]には未だ[[ビッグデータ]]という概念は無く（ブロードバンド接続普及後の[[2010年]]に初めて提唱された）、[[データマイニング]]としての産業応用は行われなかった。しかし、[[ニューラルネットワーク]]が一般人も巻き込んで流行した事例としては初めての事例であり、2010年代の[[ディープラーニング]]ブームの前史とも言える社会現象と言える。
+
+====== ブームの経緯 ======
+松下電器が1985年頃から人間が持つような曖昧さを制御に活かすファジィ制御についての研究を開始し、1990年2月1日にファジィ洗濯機第1号である「愛妻号Dayファジィ」の発売に漕ぎ着けた。「愛妻号Dayファジィ」は従来よりも多数のセンサーで収集したデータに基づいて、柔軟に運転を最適化する洗濯機で、同種の洗濯機としては世界初であった。ファジィ制御という当時最先端の技術の導入がバブル期の高級路線にもマッチしたことから、ファジィは裏方の制御技術であるにもかかわらず世間の大きな注目を集めた<ref name=":1">{{Cite web|url=https://www.cbii.kutc.kansai-u.ac.jp/kaisetsu/7.pdf|title=松下電器から生まれたファジィ家電，ニューロファジィ家電|accessdate=2019年5月12日|publisher=関西大学}}</ref>。その流行の度合いは、1990年の新語・流行語大賞における新語部門の金賞で「ファジィ」が選ばれる程であった。その後に、松下電器はファジィルールの煩雑なチューニングを自動化したニューロファジィ制御を開発し、従来のファジィ理論の限界を突破して学会で評価されるだけでなく、白物家電への応用にも成功して更なるブームを巻き起こした。松下電器の試みの成功を受けて、他社も同様の知的制御を用いる製品を多数発売した。1990年代中頃までは、メーカー各社による一般向けの白物家電の売り文句として知的制御技術の名称が大々的に用いられており、洗濯機の製品名では「愛妻号DAYファジィ」，掃除機の分類としては「ニューロ・ファジィ掃除機」，エアコンの運転モードでは「ニューロ自動」などの名称が付与されていた<ref>{{Cite web|title=ファジィ全自動洗濯機 （松下電器産業） {{!}} 日本知能情報ファジィ学会|url=http://www.j-soft.org/example-database/2000-03-16-36|website=www.j-soft.org|accessdate=2019-05-02}}</ref><ref>{{Cite web|title=ニューロ・ファジィ掃除機 （日立製作所） {{!}} 日本知能情報ファジィ学会|url=http://www.j-soft.org/example-database/2000-03-16-55|website=www.j-soft.org|accessdate=2019-05-05}}</ref><ref>{{Cite web|url=https://tg-gamedios.tokyo-gas.co.jp/landing/images/TKG00001/orig/29/1008515223261301.PDF|title=ガスルームエアコン SN-A4541U-D SN-A4541RF-D 取扱説明書|accessdate=2019年5月3日|publisher=東京ガス}}</ref><ref>{{Cite journal|last=光幸|first=木内|last2=信二|first2=近藤|date=1990-08-15|title=全自動洗濯機「愛妻号Dayファジィ」(NA-F 50 Y 5)の紹介|url=https://doi.org/10.3156/jfuzzy.2.3_384|journal=日本ファジィ学会誌|volume=2|issue=3|pages=384–386|language=ja|doi=10.3156/jfuzzy.2.3_384|issn=0915-647X}}</ref><ref>{{Cite journal|last=薫|first=廣田|date=1991-05-20|title=ファジィ家電,どこがファジィか|url=https://doi.org/10.11526/ieejjournal1888.111.417|journal=電氣學會雜誌|volume=111|issue=5|pages=417–420|language=ja|doi=10.11526/ieejjournal1888.111.417|issn=0020-2878}}</ref><ref>{{Cite journal|last=貞夫|first=秋下|date=1991-04-15|title=特集「ニューロおよびファジィのロボットへの応用について」|url=https://doi.org/10.7210/jrsj.9.203|journal=日本ロボット学会誌|volume=9|issue=2|pages=203–203|language=ja|doi=10.7210/jrsj.9.203|issn=0289-1824}}</ref>。
+
+ニューロ，ファジィ，ニューロファジィという手法は、従来の単純なオン・オフ制御や、対象を数式で客観的にモデル化する（この作業は対象が複雑な機構を持つ場合は極めて難しくなる）必要があるPID制御や現代制御等と比較して、人間の主観的な経験則や計測したデータの特徴が利用可能となるファジィ、ニューロ、[[ニューロファジィ]]は開発工数を抑えながら、環境適応時の柔軟性を高くできるという利点があった<ref name=":0">{{Cite journal|last=元秀|first=馬野|last2=勲|first2=林|date=1993-04-15|title=ファジィ・ニューラルネットワークの現状と展望(<特集>ファジィ・ニューラルネットワーク)|url=https://doi.org/10.3156/jfuzzy.5.2_178|journal=日本ファジィ学会誌|volume=5|issue=2|pages=178–190|language=ja|doi=10.3156/jfuzzy.5.2_178|issn=0915-647X}}</ref>。しかし、開発者らの努力にもかかわらず、計算能力や収集可能なデータ量の少なさから、既存の工作機械や家電製品の制御を多少改善する程度で限界を迎えた。理論的にもファジィ集合と深層学習が不可能なニューラルネットワークの組み合わせであり、計算リソースやデータが潤沢に与えられたとしても、認識精度の向上には限界があった。
+
+以降、計算機の能力限界から理論の改善は遅々として進まず、目立った進展は無くなり、1990年代末には知的制御を搭載する白物家電が大多数になったことで、売り文句としてのブームは去った<ref>{{Cite web|title=そういえば、ファジーなんて言葉があったよね|url=https://easy.mri.co.jp/19990427.html|accessdate=2019-05-02|language=ja}}</ref>。ブーム後は一般には意識されなくなったが、現在では裏方の技術として、家電製品のみならず、雨水の排水，駐車場，ビルの管理システムなどの社会インフラにも使われ、十分に性能と安定性が実証されている。2003年頃には、人間が設計した[[オントロジー (情報科学)|オントロジー]]（ファジィルールとして表現する）を利活用するネットワーク・インテリジェンスという分野に発展した<ref>{{Cite journal|last=亨|first=山口|date=2003-04-10|title=ニューロ・ファジィ制御とネットワークインテリジェンス|url=https://doi.org/10.11499/sicejl1962.42.321|journal=計測と制御|volume=42|issue=4|pages=321–323|language=ja|doi=10.11499/sicejl1962.42.321|issn=0453-4662}}</ref>。
+
+=== 2000年代 ===
+2002年、[[進化的計算]]の一種である[[遺伝的アルゴリズム]]を利用し、人工ニューラルネットワーク内部の結合重みやトポロジ（各層間の接続関係）の自動最適化を行う手法がテキサス大学によって開発された。
+
+2005年、レイ・カーツワイルは著作で、「圧倒的な人工知能が知識・知能の点で人間を超越し、科学技術の進歩を担い世界を変革する[[技術的特異点]]（シンギュラリティ）が2045年にも訪れる」とする説を発表した。
+
+2006年に、[[ジェフリー・ヒントン]]らの研究チームにより[[オートエンコーダ]]による[[ニューラルネットワーク]]の深層化手法が提案された（現在の[[ディープラーニング]]の直接的な起源）。
+
+=== 2010年代前半 ===
+2010年代に入り、膨大なデータを扱う研究開発のための環境が整備されたことで、AI関連の研究が再び大きく前進し始めた。
+
+[[2010年]]に英国エコノミスト誌で「[[ビッグデータ]]」という用語が提唱された。同年に[[質問応答システム]]の[[ワトソン (コンピュータ)|ワトソン]]が、クイズ番組「[[ジェパディ!]]」の練習戦で人間に勝利し、大きなニュースとなった<ref>[http://www.nhk.or.jp/zero/contents/dsp343.html 人工知能がクイズ王に挑戦！ 後編 いよいよ決戦 - NHKオンライン]</ref>。[[2012年]]に画像処理コンテストで[[ジェフリー・ヒントン]]氏のチームが従来手法からの大幅な精度改善を果たした上で優勝したことで、第三次AIブームが始まった。[[コンピュータ将棋]]では[[将棋電王戦]]が始まり、次々とプロを破った。
+
+2013年には[[国立情報学研究所]]{{efn|[[新井紀子]]がリーダー。}}や[[富士通研究所]]の研究チームが開発した「[[東ロボくん]]」で東京大学入試の模擬試験に挑んだと発表した。数式の計算や単語の解析にあたる専用プログラムを使い、実際に受験生が臨んだ[[大学入試センター試験]]と東大の2次試験の問題を解読した。[[代々木ゼミナール]]の判定では「東大の合格は難しいが、私立大学には合格できる水準」だった<ref>[http://www.nikkei.com/article/DGXNASDG2302P_T21C13A1CR8000/ 人工知能が東大模試挑戦「私大合格の水準」：日本経済新聞、閲覧2017年7月28日]</ref>。
+
+2014年には、日本の人工知能学者である[[齊藤元章]]により、特異点に先立ち、オートメーション化とコンピューター技術の進歩により衣食住の生産コストがゼロに限りなく近づくという[[プレ・シンギュラリティ]]という概念も提唱された。
+
+[[ジェフ・ホーキンス]]が、実現に向けて研究を続けているが、著書『考える脳 考えるコンピューター』の中で[[自己連想記憶理論]]という独自の理論を展開している。
+
+世界各国において、軍事・民間共に実用化に向け研究開発が進んでいるが、とくに無人戦闘機{{lang|en|[[UCAV]]}}や無人自動車[[ロボットカー]]の開発が進行しているものの、2010年代にはまだ完全な自動化は試験的なものに留まった（UCAVは利用されているが、一部操作は地上から行っているものが多い）。
+
+ロボット向けとしては、[[MITコンピュータ科学・人工知能研究所|CSAIL]]のロドニー・ブルックスが提唱した[[包摂アーキテクチャ]]という理論が登場している。これは従来型の「我思う、故に我あり」の知が先行するものではなく、体の神経ネットワークのみを用いて環境から学習する行動型システムを用いている。これに基づいた[[ゲンギス]]と呼ばれる六本足のロボットは、いわゆる「脳」を持たないにもかかわらず、まるで生きているかのように行動する。
+
+=== 2010年代後半 ===
+2015年10月に[[DeepMind]]社が作成した「[[AlphaGo]]」が人間のプロ囲碁棋士に勝利して以降は[[ディープラーニング]]（深層学習）と呼ばれる手法が注目され、人工知能自体の研究の他にも、人工知能が雇用などに与える影響についても研究が進められている<ref>平成28年版 情報通信白書 第4章 第2節～4節 {{Cite web |url=https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h28/pdf/index.html |title=平成28年版 情報通信白書（PDF版） |publisher=[[総務省]]|accessdate=2016-09-06}}</ref>。
+
+2016年10月、DeepMindが、入力された情報の関連性を導き出し仮説に近いものを導き出す人工知能技術「ディファレンシャブル・ニューラル・コンピューター」を発表<ref>http://ascii.jp/elem/000/001/249/1249977/</ref>し、同年11月、大量のデータが不要の「ワンショット学習」を可能にする深層学習システムを<ref>https://www.technologyreview.jp/s/12759/machines-can-now-recognize-something-after-seeing-it-once/</ref>、翌2017年6月、関係推論のような人間並みの認識能力を持つシステムを開発<ref>http://gigazine.net/news/20170616-deepmind-general-ai/</ref>。2017年8月には、記号接地問題（[[シンボルグラウンディング問題]]）を解決した<ref>https://www.nikkan.co.jp/articles/view/00439317</ref>。
+
+従来、AIには不向きとされてきた不完全情報ゲームである[[ポーカー]]でもAIが人間に勝利するようになった<ref>{{Cite web|title=ついに6人対戦のポーカーでAIがプロのポーカープレイヤーを打ち負かす|url=https://gigazine.net/news/20190712-ai-beats-pros-6-player-poker/|website=GIGAZINE|accessdate=2021-02-22|language=ja}}</ref>。
+
+Googleの関係者はさらに野心的な取り組みとして、単一のソフトウェアで100万種類以上のタスクを実行可能なAIを開発していると明らかにした<ref>{{Cite web|title=グーグルが狙う「万能AI」、100万の役割を担えるモデルの驚くべき開発方法|url=https://active.nikkeibp.co.jp/atcl/act/19/00140/030200005/|website=日経クロステック Active|accessdate=2021-02-22|language=ja|first=日経クロステック|last=Active}}</ref>。
+
+==== 人工知能の第三次ブーム：AGI（汎用人工知能）と技術的特異点 ====
+2006年のディープラーニングの発明と、2010年以降の[[ビッグデータ]]収集環境の整備、計算資源となるGPUの高性能化により、2012年にディープラーニングが画像処理コンテストで他の手法に圧倒的大差を付けて優勝したことで、技術的特異点という概念は急速に世界中の識者の注目を集め、現実味を持って受け止められるようになった。ディープラーニングの発明と急速な普及を受けて、研究開発の現場においては、[[デミス・ハサビス]]率いるDeepMindを筆頭に、Vicarious、IBM Cortical Learning Center、全脳アーキテクチャ、PEZY Computing、OpenCog、GoodAI、nnaisense、IBM SyNAPSE等、'''汎用人工知能'''（'''AGI'''）を開発するプロジェクトが数多く立ち上げられている。これらの研究開発の現場では、脳をリバースエンジニアリングして構築された[[神経科学]]と機械学習を組み合わせるアプローチが有望とされている<ref>http://wba-initiative.org/1653/</ref>。結果として、Hierarchical Temporal Memory (HTM) 理論、Complementary Learning Systems (CLS) 理論の更新版等、単一のタスクのみを扱うディープラーニングから更に一歩進んだ、複数のタスクを同時に扱う理論が提唱され始めている。
+
+3Dゲームのような仮想空間でモデルを動かし現実世界のことを高速に学ばせるといったことも大きな成果を上げている（[[シミュレーション]]による学習）。
+
+また、数は少ないがAGIだけでは知能の再現は不可能と考えて、身体知を再現するために、全人体シミュレーションが必要だとする研究者やより生物に近い振る舞いを見せるAL（人工生命）の作成に挑む研究者、知能と密接な関係にあると思われる意識のデジタル的再現（[[人工意識]]）に挑戦する研究者もいる。
+
+リーズナブルなコストで大量の計算リソースが手に入るようになったことで、ビッグデータが出現し、企業が膨大なデータの活用に極めて強い関心を寄せており、全世界的に民間企業主導で莫大な投資を行って人工知能に関する研究開発競争が展開されている。また、2011年の[[D-Wave Systems]]による[[量子焼きなまし法|量子アニーリング方式]]の製品化を嚆矢として、量子コンピュータという超々並列処理が可能な次世代のITインフラが急速に実用化され始めた事で、人工知能の高速化にも深く関わる組み合わせ最適化問題をリアルタイムに解決できる環境が整備され始めている。([[量子人工知能|量子機械学習]]を参照)この動向を受ける形で、2016年頃から、一般向けのニュース番組でも人工知能の研究開発や新しいサービス展開や量子コンピュータに関する報道が目立つようになった。
+
+2017年には[[イーロン・マスク]]が、急速に進化し続ける人工知能に対して人間が遅れを取らないようにするために、[[ブレイン・マシン・インタフェース|ブレイン・マシン・インターフェース]]を研究開発する[[ニューラリンク]]を立ち上げていたことを公表した。
+
+[[2017年]]10月には[[ジェフリー・ヒントン]]により要素間の相対的な位置関係まで含めて学習できるカプセルネットワークが提唱された<ref>{{Cite journal|last=Hinton|first=Geoffrey E.|last2=Frosst|first2=Nicholas|last3=Sabour|first3=Sara|date=2017-10-26|title=Dynamic Routing Between Capsules|url=https://arxiv.org/abs/1710.09829v2|language=en}}</ref>。
+
+2017年、アテンションメカニズムを採用する「Transformer」と呼ばれる新しい自然言語処理技術がGoogleによって発案された。
+
+2018年3月16日の国際大学[[GLOCOM]]の提言によると、課題解決型のAIを活用する事で社会変革に寄与できると分析されている<ref>{{Cite web|url=https://atmarkit.itmedia.co.jp/ait/articles/1803/19/news030.html|title=「課題解決型」のAIが日本社会を変える――国際大学GLOCOMがAI活用実態の調査結果を発表|publisher=＠IT|accessdate=2018-03-24|date=2018-03-19}}</ref>。
+
+2018年8月、[[OpenAI]]が好奇心を実装しノーゲームスコア、ノーゴール、無報酬で目的なき探索を行うAIを公表。これまでのAIで最も人間らしいという<ref>https://thenextweb.com/artificial-intelligence/2018/08/23/researchers-gave-ai-curiosity-and-it-played-video-games-all-day/ </ref>。
+
+2018年9月、MITリンカーン研究所は従来ブラックボックスであったニューラルネットワークの推論をどのような段階を経て識別したのかが明確に分かるアーキテクチャを開発した<ref>https://news.mit.edu/2018/mit-lincoln-laboratory-ai-system-solves-problems-through-human-reasoning-0911</ref>。
+
+2018年、ハーバード大学は畳み込みニューラルネットの構造をそのままに、そこに量子ゲートとくりこみを適用した「量子畳み込みニューラルネット(QCNN)」を提案した。
+
+2019年、[[BERT (言語モデル)|BERT]]などの言語モデルにより、深層学習では困難とされてきた言語処理において大きな進展があり、Wikipediaなどを使用した読解テストで人間を上回るに至った<ref>{{Cite web|title=文章読解でもAIがついに人間超え、グーグルの「BERT」発表から1年で急成長|url=https://tech.nikkeibp.co.jp/atcl/nxt/column/18/01056/111200002/|website=日経 xTECH（クロステック）|accessdate=2019-11-15|language=ja|first=日経|last=xTECH（クロステック）}}</ref>。
+
+=== 2020年代前半 ===
+[[2020年]]にはOpenAIにより1750億パラメータを持つ自然言語処理プログラム[[GPT-3]]が開発され、アメリカの掲示板サイト[[Reddit]]で1週間誰にも気付かれず人間と投稿・対話を続けた。プログラムと気付かれた理由は文章の不自然さではなく、その投稿数が異常というものだった<ref>https://gigazine.net/news/20201008-gpt-3-reddit/</ref>。
+
+[[DeepMind]]が開発した[[タンパク質構造予測|タンパク質の構造予測]]を行う[[AlphaFold|AlphaFold2]]が[[CASP]]の[[グローバル距離テスト]] (GDT) で90点以上を獲得し、[[計算生物学]]における重要な成果であり、数十年前からの生物学の壮大な挑戦に向けた大きな進歩と称された<ref name="science20201130">Robert F. Service, [https://www.sciencemag.org/news/2020/11/game-has-changed-ai-triumphs-solving-protein-structures ‘The game has changed.’ AI triumphs at solving protein structures], ''Science'', 30 November 2020</ref>。
+
+OpenAIはTransformer (言語モデル) の性能がパラメータ数N・データセットサイズD・計算予算Cの単純なべき乗になっているとの論文を発表した（スケーリングの法則）。
+
+最先端のAI研究では2年で1000倍サイズのモデルが出現し、1000倍の演算能力を持つコンピュータが必要になって来ている<ref>{{Cite web|title=Cerebras、GPT-3を1日で学習できるAIスパコンを発表 - Hot Chips 33|url=https://news.mynavi.jp/techplus/article/20210914-1971929/|website=TECH+|date=2021-09-14|accessdate=2021-11-08|language=ja}}</ref>。
+
+2021年4月、[[NVIDIA]]の幹部、パレシュ・カーリャは「数年内に100兆パラメータを持つAIモデルが出てくるだろう」と予想した<ref>{{Cite web|title=エヌビディアがCPU参入 アームと組みAI計算10倍速く|url=https://www.nikkei.com/article/DGXZQOGN09EBS0Z00C21A4000000/|website=日本経済新聞|date=2021-04-13|accessdate=2021-04-13|language=ja}}</ref>。
+
+2021年5月、マイクロソフトが32兆パラメーターのAIを試験<ref>{{Cite web|title=MicrosoftのZeRO-Infinity Libraryで32兆個のパラメーターのAIモデルをトレーニング|url=https://www.infoq.com/jp/news/2021/06/microsoft-zero-infinity/|website=InfoQ|accessdate=2021-11-08|language=ja}}</ref>。
+
+2021年6月、中国政府の支援を受けている北京智源人工知能研究院がパラメーター数1兆7500億のAI「悟道2.0」を発表<ref>{{Cite web|title=中国の研究チームが新たなAI「悟道2.0」を発表、パラメーター数は1兆7500億でGoogleとOpenAIのモデルを上回る|url=https://gigazine.net/news/20210604-china-wudao-2-ai/|website=GIGAZINE|accessdate=2021-11-08|language=ja}}</ref>。
+
+2021年6月、グーグルの研究者達がグラフ畳み込みニューラルネットと強化学習(方策勾配法最適化)を用いて配線とチップの配置を自動設計させたところ、消費電力、性能など全ての主要な指数で人間が設計したもの以上の行列演算専用チップのフロアプランを生成した。そして、設計にかかる時間は人間の1/1000であった<ref>{{Cite web|title=計算機科学：人工知能がコンピューターチップの設計をスピードアップ {{!}} Nature {{!}} Nature Portfolio|url=http://www.natureasia.com/ja-jp/research/highlight/13701|website=www.natureasia.com|accessdate=2021-07-10|language=ja}}</ref>。
+
+2021年8月、グーグルの量子人工知能研究部門を率いるハルトムート・ネベンは[[量子コンピュータ]]の発達の影響がもっとも大きい分野として機械学習分野などAIを挙げた<ref>{{Cite web|title=Google幹部、AIの人知超え「前倒しも」 量子計算機で|url=https://www.nikkei.com/article/DGXZQOGN211ZF0R20C21A8000000/|website=日本経済新聞|date=2021-08-24|accessdate=2021-11-08|language=ja}}</ref>。
+
+2021年8月、DeepMindはさまざまな種類の入力と出力を処理できる汎用の深層学習モデル「Perceiver」を開発した。
+
+2021年10月、GoogleBrainは視覚、聴覚、言語理解力を統合し同時に処理するマルチモーダルAIモデル「'''Pathways'''」を開発中であると発表した。
+
+2022年02月、DeepMindは自動でプログラムのコーディングが可能なAI「'''AlphaCode'''」を発表した。自然言語で入力した単純なプロンプトからコードを生成できる。その能力は、競技プログラミングコンテスト｢Codeforces｣で過去に出題されたプログラミング課題を解くタスクで、平均ランキング上位54.3%に入る実力である。
+
+2022年4月、Googleは予告どおりPathwaysを使い、万能言語モデルPaLMを完成させた。とんち話の解説を行えるほか、9-12歳レベルの算数の文章問題を解き、数学計算の論理的な説明が可能であった。デジタルコンピュータは誕生から80年弱にして初めて数学計算の内容を文章で説明できるようになった<ref>https://etechnologyreview.com/2022/04/29/google%E3%81%AF%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%81%AEai%E8%A8%80%E8%AA%9E%E3%83%A2%E3%83%87%E3%83%AB%E3%80%8Cpalm%E3%80%8D%E3%82%92%E9%96%8B%E7%99%BA%E3%80%81%E8%A8%80/</ref>。その後、自然言語処理としてPathwaysをベースにした数学の問題を解けるモデル「'''Minerva'''」を開発した。また、Pathwaysをベースにした自然言語処理とDiffusion Modelを連携し、画像生成モデル'''Parti'''を発表した。
+
+2022年5月12日、DeepMindは様々なタスクを一つのモデルで実行することができる統合モデル「'''Gato'''」を発表した。チャット、画像の生成と説明、四則演算、物体を掴むロボットの動作、ゲームの攻略等々、600にも及ぶ数々のタスクをこの一つのモデルで実行することができるという。
+
+DeepMindのNando de Freitasは「今は規模が全てです。(AGIに至る道を探す)ゲームは終わった」と主張したが<ref>、https://gigazine.net/news/20220518-deepmind-gato/</ref>人工知能の歴史の中で繰り返されてきた誇大広告だという批判も存在する<ref>https://www.technologyreview.jp/s/276810/the-hype-around-deepminds-new-ai-model-misses-whats-actually-cool-about-it/ </ref>
+
+2022年5月、GoogleのチャットボットLaMDAの試験が行われた。それに参加していたエンジニアであるブレイク・ルモワンはLaMDAに意識があると確信、会話全文を公開したがGoogleから守秘義務違反だとして休職処分を受けた。この主張には様々な批判意見がある<ref>https://gigazine.net/news/20220614-google-ai-lamda-sentient-nonsens/</ref>。
+
+2022年8月、画像生成AI・Midjourneyの作品が米国コロラド州で開催された美術品評会で優勝した<ref name=":5">{{Cite web |title=画像生成AI「Midjourney」の絵が米国の美術品評会で1位に 優勝者「物議を醸すことは分かっていた」 |url=https://www.itmedia.co.jp/news/articles/2209/01/news148.html |website=ITmedia NEWS |access-date=2022-10-01 |language=ja}}</ref>。ただし細かい部分は人間の手が加えられている<ref name=":5" />。
+
+2022年9月、Googleはテキストから3Dモデルを生成できる「DreamFusion」を開発した。複数の静止画から3Dモデルを生成するNeRFや、Diffusion Modelを使用している。
+
+2022年10月、DeepMindは行列の積を効率的に計算するための未発見のアルゴリズムを導き出す「'''AlphaTensor'''」を開発した。<ref>https://gigazine.net/news/20221006-deepmind-alphatensor/</ref>。「4×5の行列」と「5×5の行列」の積を求める際に、通常の計算方法で100回の乗算が必要なところを、76回に減らすことができた。またこれを受けて数学者もさらに高速な行列乗算プログラムを公表した<ref>https://twitter.com/lotz84_/status/1580353636424888320</ref>。
+
+2023年1月11日、DeepMindは、画像から世界モデルを学習し、それを使用して長期視点から考えて最適な行動を学習する事が出来る「DreamerV3」を発表した。
+
+Googleロボティクス部門は、ロボットの入力と出力行動(カメラ画像、タスク指示、モータ命令など)をトークン化して学習し、実行時にリアルタイム推論を可能にする「'''Robotics Transformer 1(RT-1)'''」を開発した。
+
+2022年、研究者の間では大規模ニューラルネットワークに意識が存在するか議論が起こっている。深層学習の第一人者Ilya Sutskeverは「（大規模ニューラルネットワークは）少し意識的かもしれない」と見解を示した<ref>{{Cite web |title=https://twitter.com/ilyasut/status/1491554478243258368 |url=https://twitter.com/ilyasut/status/1491554478243258368 |website=Twitter |access-date=2022-12-22 |language=ja}}</ref>。
+
+2022年12月、Googleは、「'''Flan-PaLM'''」と呼ばれる巨大言語モデルを開発した。米国医師免許試験(USMLE)形式のタスク「MedQA」で正答率67.6%を記録し、PubMedQAで79.0%を達成した。57ジャンルの選択問題タスク「MMLU」の医療トピックでもFlan-PaLMの成績は他の巨大モデルを凌駕した。臨床知識で80.4%、専門医学で83.8%、大学生物学で88.9%、遺伝医療学で75.0%の正答率である。
+
+[[質問応答システム|質問応答]]、[[意思決定支援システム|意思決定支援]]、需要予測、[[音声認識]]、[[音声合成]]、[[機械翻訳]]、科学技術計算、文章要約など、各分野に特化したシステムやこれらを組み合わせたフレームワークが実用化された<ref name=":13">{{Cite web |title=NVIDIA ジェンスン・フアンCEO、対話型AIサービス「Jarvis」で「じゃんがらラーメン」を探すデモ |url=https://car.watch.impress.co.jp/docs/news/1318471.html |website=Car Watch |date=2021-04-14 |accessdate=2021-04-15 |language=ja |last=株式会社インプレス}}</ref><ref>{{Cite web |title=Adobe Premiere Pro、音声からの文字起こし進化中。テンプレ拡充 |url=https://av.watch.impress.co.jp/docs/news/1321662.html |website=AV Watch |date=2021-04-27 |accessdate=2021-04-29 |language=ja |last=株式会社インプレス}}</ref><ref name=":2" /><ref>{{Cite web |title=「パパとママ」の声を完コピ！ タカラトミーの読み聞かせスピーカーが話題に |url=https://www.itmedia.co.jp/business/articles/2212/22/news036.html |website=ITmedia ビジネスオンライン |access-date=2022-12-22 |language=ja}}</ref>。
+
+従来、AIは肉体労働や単純作業を置き換え、芸術的・創造的仕事が「人間の領域」となると予想されてきたが、実際には2020年代前半から芸術的な分野へ急速に進出している<ref name=":11" /><ref name=":12" />。またAIの実用化後も残るとされた翻訳、意思決定、法律相談など高度なスキルを必要とする分野への応用も進んでいる<ref name=":13" /><ref name=":14" />。一方で2023年時点では肉体労働や単純作業への利用は[[自動倉庫]]の制御<ref>{{Cite web |title=ソフトバンクが挑む「物流自動化」 高密度自動倉庫など千葉に新施設 |url=https://www.watch.impress.co.jp/docs/news/1439328.html |website=Impress Watch |date=2022-09-12 |access-date=2022-12-22 |language=ja |last=株式会社インプレス}}</ref>など限定的な利用にとどまっている。[[テスラ (会社)|テスラ社]]は開発を進める[[二足歩行ロボット]][[Tesla Bot]]に汎用人工知能を搭載し、単純労働を担当させると表明している。
+
+== 哲学とAI ==
+=== 哲学・宗教・芸術 ===
+{{see also|科学哲学|技術哲学|経営哲学|[[:en:philosophy of business|商哲学]]|[[技術的特異点|技術的特異点（シンギュラリティ）]]}}
+[[Google]]は2019年3月、人工知能プロジェクトを[[倫理]]面で指導するために[[哲学]]者・[[政策]]立案者・[[経済学]]者・テクノロジスト等で構成される、AI倫理委員会を設置すると発表した{{Sfn|Will Knight|2019}}。しかし倫理委員会には[[反知性主義|反科学]]・反[[マイノリティ]]・[[地球温暖化懐疑論]]等を支持する人物も含まれており、Google社員らは解任を要請した{{Sfn|Will Knight|2019}}。4月4日、Googleは倫理委員会が「期待どおりに機能できないことが判明した」という理由で、委員会の解散を発表した{{Sfn|Will Knight|2019}}。
+
+[[東洋哲学]]をAIに吸収させるという三宅陽一郎のテーマに応じて、[[井口尊仁]]は「[[鳥居]]（TORII）」という自分のプロジェクトを挙げ、「われわれは[[アニミズム]]で、あらゆるものに[[霊]]的存在を見いだす[[文化]]があります」と三宅および立石従寛に語る{{Sfn|高橋ミレイ|2019|p=後編}}。アニミズム的人工知能論は[[現代アート]]や、「[[禅]]の[[悟り]]をどうやってAIにやらせるか」を論じた三宅の『人工知能のための哲学塾 東洋哲学篇』にも通じている{{Sfn|高橋ミレイ|2019|p=後編}}。
+
+元Googleエンジニアのアンソニー゠レバンドウスキーは2017年、AIを[[神]]とする[[宗教団体]]「Way of the Future（未来の道）」を創立している{{Sfn|塚本紺|2017|p=2017年10月5日 20時0分}}。団体の使命は「人工知能（AI）に基づいたGodheadの実現を促進し開発すること、そしてGodheadの理解と崇拝を通して社会をより良くすることに貢献すること」と抽象的に表現されており、多くの海外メディアは[[サイエンス・フィクション|SF]][[映画]]や[[歴史]]などと関連付けて報道した{{Sfn|塚本紺|2017|p=2017年10月5日 20時0分}}。[[Uber]]とGoogleのWaymoは、レバンドウスキーが[[自動運転車|自動運転]]に関する[[機密情報]]を[[盗用]]したことを訴え[[裁判]]を行っている一方、レバンドウスキーはUberの元[[CEO]]（トラビス゠カラニック）に対し「[[ボット]]ひとつずつ、我々は[[世界征服|世界を征服]]するんだ」と発言するなど、野心的な振る舞いを示している{{Sfn|塚本紺|2017|p=2017年10月5日 20時0分}}。
+
+[[相愛大学]]人文学部教授の[[釈徹宗]]は「哲学や思想や文学と、宗教や霊性論との線引きも不明瞭になってきています。」と述べている<ref>[[内田樹]]・釈徹宗（2013）『現代霊性論』 (講談社文庫)、講談社、178ページ</ref>。哲学者・倫理学者である内田樹によれば、「本物の哲学者はみんな死者と幽霊と異界の話をしている。」という<ref>内田樹・釈徹宗（2013）『現代霊性論』 (講談社文庫)、講談社、155ページ</ref>。
+
+発明家[[レイ・カーツワイル]]が言うには、哲学者[[ジョン・サール]]が提起した[[強いAIと弱いAI]]の論争は、AIの哲学議論でホットな話題である<ref>Kurzweil, Singularity (2005) p. 260</ref>。哲学者[[ジョン・サール]]および[[ダニエル・デネット]]によると、サールの「[[中国語の部屋]]」や[[ネド・ブロック]]らの「[[中国脳]]」といった[[機能主義 (心の哲学)|機能主義]]に批判的な思考実験は、真の意識が[[形式論理]]システムによって実現できないと主張している<ref>Searle, John (1980), "Minds, Brains and Programs", Behavioral and Brain Sciences, 3 (3): 417–457, doi:10.1017/S0140525X00005756,</ref><ref>Daniel Dennett (1991). "Chapter 14. Consciousness Imagined". Consciousness Explained. Back Bay Books. pp. 431–455.</ref>。
+
+=== 批判 ===
+『科学を語るとはどういうことか』において科学者の[[須藤靖]]は、科学についての哲学的考察（[[科学哲学]]）が、実際には科学と「断絶」していることを指摘している<ref name="kagaku14-15">須藤靖・[[伊勢田哲治]]（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』[[河出書房新社]]、14～15ページ。</ref>。また、「[[心]]」や「[[意識]]」という問題を解明してきた[[脳科学]]・[[計算機科学]]（コンピュータ科学）・人工知能[[研究開発]]等に関連して、科学者の[[フランシス・クリック]]は「哲学者たちは2000年という長い間、ほとんど何も成果を残してこなかった」と批判している{{Sfn|野家|2002|p=34}}。こうした観点において、[[哲学]]は「二流どころか三流」の学問・科学に過ぎない、と評価されている{{Sfn|野家|2002|p=34}}。脳科学者の[[澤口俊之]]は、クリックに賛同し「これは私のため息まじりの愚痴になるが、哲学者や思想家というのはつくづく『[[暇]]』だと思う」と述べている{{Sfn|野家|2002|p=34}}。実際、哲学は暇（[[スコレー]]）から始まったと[[アリストテレス]]が伝えており、上記のような否定的発言も的外れではないと、科学哲学者の[[野家啓一]]は言う{{Sfn|野家|2002|p=34}}。{{See also|クオリアデータ|計算神経科学|意識の統合情報理論}}
+
+哲学者は、科学とは違う[[日常]]的言語で「存在」や「宇宙」を語ろうとしてきた{{sfn|全|2014|p=178}}。しかし[[理論物理学]]者[[ディラック]]は、哲学者をことさら信用していなかった{{sfn|全|2014|pp=177-178}}。ディラックが見たところ、[[ルートヴィヒ・ウィトゲンシュタイン|ウィトゲンシュタイン]]を含め哲学者たちは[[量子力学]]どころか、[[ブレーズ・パスカル|パスカル]]以降の「[[確率論|確率]]」の概念さえ理解していない{{sfn|全|2014|p=177}}。非科学的な日常的言語をいくら使っても、正確な意思疎通を行うことはできないというのが、ディラックの考えだとされている{{sfn|全|2014|pp=177-178}}。
+
+[[生命情報科学]]者・[[神経科学]]者の[[合原一幸]]編著『人工知能はこうして創られる』によれば、AIの急激な発展に伴って「[[技術的特異点]]、シンギュラリティ」の思想や哲学が一部で論じられているが、特異点と言っても「[[数学]]」的な話ではない{{sfn|合原|牧野|金山|河野|2017|p=34}}。前掲書は「そもそもシンギュラリティと関係した議論における『人間の[[脳]]を超える』という[[言明]]自体がうまく[[定義]]できていない」と記している{{sfn|合原|牧野|金山|河野|2017|p=38}}。確かに、脳を「デジタル[[情報処理システム]]」として捉える観点から見れば、シンギュラリティは起こり得るかもしれない{{sfn|合原|牧野|金山|河野|2017|p=42}}。しかし実際の脳はそのような単純なシステムではなく、[[デジタル]]と[[アナログ]]が融合した「[[ハイブリッド]]系」であることが、脳[[神経科学]]の観察結果で示されている{{sfn|合原|牧野|金山|河野|2017|p=42}}。前掲書によると、[[神経]]膜では様々な「[[ノイズ]]」が存在し、このノイズ付きのアナログ量によって脳内の[[ニューロン]]の「[[カオス理論|カオス]]」が生み出されているため、このような状況をデジタルで記述することは「極めて困難」と考えられている{{sfn|合原|牧野|金山|河野|2017|pp=46-47}}。
+
+[[数学者]]・[[論理学者]]の[[田中一之]]は「一般の哲学者は、[[論理]]の[[専門家]]ではない」と述べており{{sfn|フランセーン|2011|p=233}}、計算機科学者（コンピュータ科学者）・論理学者のトルケル゠フランセーンは、哲学者たちによる数学的な言及の多くが「ひどい[[誤解]]や[[自由連想]]に基づいている」と批判している{{sfn|フランセーン|2011|p=4}}。田中によると、[[ゲーデルの不完全性定理]]について哲学者が書いた本が、フランセーンの本と同じ頃に書店販売されていたが、哲学者の本は専門誌によって酷評された{{sfn|フランセーン|2011|p=233}}。その本は全体として読みやすく一般読者からの評判は高かったが、[[クルト・ゲーデル|ゲーデル]]の証明の核（[[不動点定理]]）について、根本的な勘違いをしたまま説明していた{{sfn|フランセーン|2011|p=233}}。同様の間違いは他の入門書などにも見られる{{sfn|フランセーン|2011|p=233}}。フランセーンによれば、不完全性定理に関する誤解・誤用は哲学をはじめ一般に起こっており{{sfn|フランセーン|2011|p=4}}、宗教や[[神学]]でも乱用されている{{sfn|フランセーン|2011|p=7}}{{sfn|フランセーン|2011|p=126}}。1931年にゲーデルが示したのは、「特定の[[形式体系]]<math>P</math>において決定不能な命題の存在」であり、一般的な意味での「不完全性」についての定理ではない{{sfn|フランセーン|2011|p=230}}。
+{{main|ゲーデルの不完全性定理#誤解（哲学等による誤解・誤用）|[[ゲーデルの不完全性定理#不完全性定理が成立しない体系|不完全性定理が成立しない体系]]|ゲーデルの完全性定理}}
+
+==== 科学と哲学 ====
+『科学を語るとはどういうことか』によると、学問の扱う問題が整理され分化したことで、科学と哲学もそれぞれ異なる問題を研究するようになった<ref name=kagaku57-58>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、57-58ページ。</ref>。これは「研究分野の細分化そのもの」であり、「立派な[[進歩]]」だと宇宙物理学者の須藤は言う<ref name=kagaku57-58/>。一方で、科学哲学者・倫理学者の[[伊勢田哲治]]は、様々な要素を含んだ「大きな」問題を哲学的・統一的に扱う、かつての[[天文学]]について言及した<ref name=kagaku57-58/>。「その後の天文学ではその〔哲学的〕問題を扱わなくなりましたし、今の物理学でもそういう問題を扱わない」と述べた伊勢田に対し、須藤は「その通りですが、それ自体に何か問題があるのでしょうか」と返している<ref name=kagaku57-58/>。須藤は次のようにも述べた<ref name=kagaku14-15/>。
+
+{{quotation|「科学哲学と科学の断絶」
+
+私は、科学哲学が物理学者に対して何らかの助言をしたなどということは聞いたことがないし、おそらく科学哲学と一般の科学者はほとんど没交渉であると言って差し支えない状況なのであろう。… 科学哲学者と科学者の価値観の溝が深いことは確実だ。
+
+[[20世紀]]が生んだ最も偉大な物理学者の一人である[[リチャード・ファインマン]]が述べたとされる有名な言葉に「科学哲学は鳥類学者が鳥の役に立つ程度にしか科学者の役に立たない」がある。… かつて私がこの言葉を引用した講演をした際に、「鳥類学は鳥のためにやっているわけでないし、科学哲学もまた科学のために存在するのではない」という反論をもらったことがある。確かに、科学哲学が科学のためのものである必要は無い<ref name=kagaku14-15/>。}}
+{{quotation|科学哲学が、この[[方法論]]が果たして正しいのであろうかと立ち止まって悩んでいる間に、科学は常に前に踏み出しています。それでいいではないですか。
+
+科学哲学者が横からいろいろ言うけれども、科学者からは「耳を傾けるべき重要な指摘だろうか」と首を傾げることばかり（たぶん、科学哲学者の皆さんから袋叩きに遭うでしょうが）というのが、正直な印象です<ref>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、260ページ。</ref>。}}
+
+須藤は、哲学的に論じられている「原因」という言葉を取り上げて、「原因という言葉を具体的に定義しない限りそれ以上の議論は不可能です」<ref>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、124～125ページ。</ref>と述べており、「哲学者が興味を持っている因果の定義が物理学者とは違うことは確かでしょう」としている<ref>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、141ページ。</ref>。伊勢田は、「思った以上に物理学者と哲学者のものの見え方の違いというのは大きいのかもしれません」と述べている<ref>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、262ページ。</ref>。
+
+対談で須藤は「これまでけっこう長時間議論を行ってきました。おかげで、意見の違いは明らかになったとは思いますが、果たして何か決着がつくのでしょうか？」と発言し、伊勢田は「決着はつかないでしょうね」と答えている<ref>須藤靖・伊勢田哲治（2013）『科学を語るとはどういうことか --- 科学者、哲学者にモノ申す』河出書房新社、284ページ。</ref>。
+
+== 文学・フィクション・SF（空想科学）==
+{{Main|フィクションにおける人工知能}}
+
+== 脚注 ==
+{{脚注ヘルプ}}
+=== 注釈 ===
+<references group="注"/>
+{{Notelist|3}}
+
+=== 出典 ===
+{{Reflist|3|refs=
+<ref name=":7">[http://logmi.jp/69130 「悪魔を呼び出すようなもの」イーロン・マスク氏が語る人工知能の危険性]</ref>
+<ref name="or1">[https://www.shogi.or.jp/column/2019/03/kakoi63.html 渡辺二冠も王将戦で採用！対振りで最近人気のエルモ（elmo）囲いの組み方とは？【玉の囲い方 第63回】] - 日本将棋連盟 2019年3月28日配信</ref>
+}}
+
+== 参考文献 ==
+'''{{fontsize|large|学術書・辞事典}}'''
+* {{Cite book|和書
+|last1 = 合原
+|first1 = 一幸
+|last2 = 牧野
+|first2 = 貴樹
+|last3 = 金山
+|first3 = 博
+|last4 = 河野
+|first4 = 崇
+|last5 = 木脇
+|first5 = 太一
+|last6 = 青野
+|first6 = 真士
+|editor = 合原一幸（編著）
+|authorlink1 = 合原一幸
+|year = 2017
+|title = 人工知能はこうして創られる
+|publisher = [[ウェッジ (出版社)|ウェッジ]]
+|isbn = 978-4863101852
+|ref = harv
+}}
+
+* {{Cite book|和書
+|last = 北原
+|first = 保雄
+|authorlink = 北原保雄
+|year = 2010
+|title = 明鏡国語辞典
+|edition = 第二版
+|publisher = [[大修館書店]]
+|isbn = 978-4469021172
+|ref = harv
+}}
+
+*{{Cite book |和書 |last=佐藤 |first=理史 |authorlink=佐藤理史 |year=2018 |title=日本大百科全書(ニッポニカ) |chapter=人工知能 |publisher=[[小学館]]・[[朝日新聞社]]・[[VOYAGE GROUP]] |chapterurl=https://kotobank.jp/word/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-4702#E6.97.A5.E6.9C.AC.E5.A4.A7.E7.99.BE.E7.A7.91.E5.85.A8.E6.9B.B8.28.E3.83.8B.E3.83.83.E3.83.9D.E3.83.8B.E3.82.AB.29 |accessdate=2018-08-16 |quote = 人工知能は、「計算（computation）」という概念と「コンピュータ（computer）」という道具を用いて「知能」を研究する計算機科学（computer science）の一分野である。誤解を恐れず平易にいいかえるならば、「これまで人間にしかできなかった知的な行為（認識、推論、言語運用、創造など）を、どのような手順（アルゴリズム）とどのようなデータ（事前情報や知識）を準備すれば、それを機械的に実行できるか」を研究する分野である。|ref=harv}}
+
+*{{Cite journal |和書
+|author = 人工知能学会
+|authorlink = 人工知能学会
+|title = 1997年度人工知能学会名簿
+|date = 1997
+|publisher = 人工知能学会
+|journal = 人工知能学会誌
+|volume = 12
+|issue = 5
+|pages = 653-808 (1-156)
+|doi = 10.11517/jjsai.12.5_797
+|ref = harv}}
+
+*{{Cite journal |和書
+|last = 仙石
+|first = 正和
+|authorlink = 仙石正和
+|title = 基礎研究を続ける大切さ（創立100周年記念特集「基礎・境界」が支えた100 年, これからの100年 ―― 未来 100 年を担うあなたへ贈る言葉）
+|date = 2017
+|publisher = 電子情報通信学会
+|journal = 電子情報通信学会誌（The journal of the Institute of Electronics, Information and Communication Engineers）
+|volume = 100
+|issue = 6
+|pages = 431-439
+|ref = harv}}
+
+* {{Cite book|和書
+|last = 全
+|first = 卓樹
+|year = 2014
+|title = エキゾティックな量子：不可思議だけど意外に近しい量子のお話
+|publisher = 東京大学出版会
+|isbn = 978-4130636070
+|ref = harv
+}}
+
+*{{Cite journal |和書|last=野家|first=啓一|authorlink=野家啓一|title=科学時代の哲学：哲学は「二流の科学」か？|date=2002|publisher=哲学若手研究者フォーラム|journal=哲学の探求|volume=29|pages=31-42|ref=harv}}
+
+*{{Cite book |和書 |last=フランセーン|first=トルケル|translator=田中一之|year=2011|title=ゲーデルの定理：利用と誤用の不完全ガイド|publisher=みすず書房|isbn=978-4622075691|ref=harv}}
+
+*{{Cite book |和書 |last=桃内 |first=佳雄 |authorlink=桃内佳雄 |year=2017 |title=日本大百科全書(ニッポニカ) |chapter=人工知能 |publisher=小学館・朝日新聞社・VOYAGE GROUP |chapterurl=https://kotobank.jp/word/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-4702#E6.97.A5.E6.9C.AC.E5.A4.A7.E7.99.BE.E7.A7.91.E5.85.A8.E6.9B.B8.28.E3.83.8B.E3.83.83.E3.83.9D.E3.83.8B.E3.82.AB.29 |accessdate=2017-12-31 |quote = 計算機（コンピュータ）による知的な情報処理システムの設計や実現に関する研究分野|ref=harv}}
+
+*{{Cite book |和書 |author=ASCII.jp|authorlink=ASCII.jp |year=2018 |title=ASCII.jpデジタル用語辞典 |chapter=人工知能 |publisher=ASCII.jp・朝日新聞社・VOYAGE GROUP |chapterurl=https://kotobank.jp/word/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-4702#SCII.jp.E3.83.87.E3.82.B8.E3.82.BF.E3.83.AB.E7.94.A8.E8.AA.9E.E8.BE.9E.E5.85.B8 |accessdate=2018-08-16 |quote = 言語の理解や推論、問題解決などの知的行動を人間に代わってコンピューターに行わせる技術。|ref=harv}}
+
+* {{Cite book|
+|last = [[アンドレアス・カプラン|Kaplan]]
+|first = Andreas M.
+|year = 2022
+|title = [https://www.routledge.com/Artificial-Intelligence-Business-and-Civilization-Our-Fate-Made-in-Machines/Kaplan/p/book/9781032155319 Artificial Intelligence, Business and Civilization: Our Fate Made in Machines]
+|edition = 2nd
+|publisher = Routledge Publishers
+|isbn = 9781032155319
+|ref = harv
+}}
+
+* {{Cite book|
+|last = Geraci
+|first = Robert M. 
+|year = 2012
+|title = Apocalyptic AI: Visions of Heaven in Robotics, Artificial Intelligence, and Virtual Reality
+|edition = reprinted
+|publisher = Oxford University Press
+|isbn = 9780199964000
+|ref = harv
+}}
+
+'''{{fontsize|large|教育研究機関・研究開発機関}}'''
+* {{Cite book |和書
+|author = 東京大学 工学部 機械情報工学科
+|year = 2021 
+|url = https://web.archive.org/web/20210621164347/http://www.t.u-tokyo.ac.jp/eng/innovator/pre/dept/mechano-informatics.html
+|title = 東京大学 工学部 機械情報工学科
+|publisher = 東京大学 工学部
+|accessdate = 2021-02-25 
+|ref = harv}}
+
+* {{Cite book |和書
+|author = 東京大学 工学部 電子情報工学科
+|year = 2021 
+|url = https://web.archive.org/web/20210621164413/http://www.t.u-tokyo.ac.jp/eng/innovator/pre/dept/communication-engineering.html
+|title = 東京大学 工学部 電子情報工学科
+|publisher = 東京大学 工学部
+|accessdate = 2021-02-25 
+|ref = harv}}
+
+* {{Cite book |和書
+|author = 東京大学 理学部 情報科学科
+|author2 = 東京大学大学院 情報理工学系研究科 コンピュータ科学専攻
+|year = 2021 
+|url = https://www.is.s.u-tokyo.ac.jp/shingaku/highschool/ai.html
+|title = 人工知能と機械学習
+|publisher = 東京大学・東京大学大学院
+|accessdate = 2021-02-25 
+|ref = harv}}
+
+'''{{fontsize|large|報道}}'''
+* {{Cite web |author=高橋ミレイ |year=2019 |url=https://wired.jp/2019/01/26/ai-art-technology-2/ |title=人工知能が禅の「悟り」を開く日は訪れるのか？：三宅陽一郎×井口尊仁×立石従寛 鼎談（後編） |website=WIRED |publisher=WIRED |accessdate=2019-02-06 |ref=harv}}
+* {{Cite web |author=塚本紺 |year=2017 |url=http://news.livedoor.com/article/detail/13709440/ |title=神はAI？ 元Googleエンジニアが宗教団体を創立 |website=livedoorニュース |publisher=ギズモード・ジャパン |accessdate=2019-02-06 |ref=harv}}
+* {{Cite web |author=Will Knight |year=2019 |url=https://www.technologyreview.jp/s/133900/googles-ai-council-faces-blowback-over-a-conservative-member/ |title=グーグルが新設した「AI倫理委員会」に社員が猛反発した理由 |website=MITテクノロジーレビュー |publisher= 株式会社角川アスキー総合研究所 |accessdate=2019-04-06 |ref=harv}}
+
+* {{  cite journal
+ |first=ELIZA
+ |last=STRICKLAND
+ |year=2021
+ |month=October
+ |title=The TURBULENT PAST and UNCERTAIN FUTURE of AI
+ |journal=IEEE Spectrum
+ |volume=58
+ |issue=10
+ |ref={{sfnref |Spectrum58-10 |2021}} }}
+
+== 関連項目 ==
+'''{{fontsize|large|教育研究・研究開発}}'''
+* [[自然科学|理学]] &#x2D; [[工学]] &#x2D; [[理工学]] &#x2D; [[応用科学]]
+** [[計算機科学]] &#x2D; [[計算機工学]] &#x2D; [[情報科学]] &#x2D; [[情報工学]] &#x2D; [[ソフトウェア工学]]
+*** [[数学]] &#x2D; [[数理論理学]]&#xFF0F;現代論理学 &#x2D; [[数理工学]]
+**** [[ゲーデルの不完全性定理#決定不能命題の例|ゲーデルの不完全性定理]] &#x2D; [[チューリングマシン#現実の計算との関係|チューリングマシン]] &#x2D; [[アルゴリズム]]
+
+'''{{fontsize|large|研究開発・応用科学}}'''
+{{div col|cols=3}}
+* [[パターン認識]]
+** [[光学文字認識]]
+** [[手書き文字認識]]
+** [[全文検索]]
+** [[音声認識]]
+** [[顔認識システム]]
+** [[感情認識]]
+** [[ジェスチャ認識]]
+* [[自然言語処理]]、[[機械翻訳]]、[[ローブナー賞]]
+* [[非線形制御]]、[[ロボット]]、[[自動計画]]
+* [[コンピュータビジョン]]、[[バーチャルリアリティ]]、[[画像処理]]
+* [[ゲーム理論]]
+* [[量子コンピュータ]]
+* [[自動推論]] - [[自動定理証明]]
+* [[認知ロボット工学]]
+* [[サイバネティックス]]
+* [[データマイニング]]
+* [[知的エージェント]]
+* [[セマンティック・ウェブ]]
+* [[モラベックのパラドックス]]
+
+{{div col end}}
+
+'''{{fontsize|large|開発事例・応用事例}}'''
+{{div col|cols=3}}
+* [[音声認識]]
+* [[画像認識]]
+* [[感情認識]]
+* [[ジェスチャ認識]]
+* [[機械翻訳]]
+* [[オートパイロット]]
+* [[:en:Robo-advisor|ロボアドバイザー]]
+* [[AIスコア・レンディング]]
+* [[チャットボット]]
+* [[バーチャルアシスタント]]
+* [https://www.ntt.com/bizon/glossary/e-h/healthtech.html 健康科技&#xFF0F;ヘルステック] - [[ヘルスケア]]（[[:en:artificial intelligence in healthcare|artificial intelligence in healthcare]]）
+* [[自動運転車]]
+* [https://www.ntt.com/bizon/glossary/j-h/politech.html 政治科技&#xFF0F;ポリテック]（[[:en:artificial intelligence in government|artificial intelligence in government]]）
+* [[コンピュータゲームにおける人工知能]]
+* [[軍事技術]] - [[軍事産業]]（[[自律型致死兵器システム]]等）
+* [[コンピュータアート]]
+{{div col end}}
+
+'''{{fontsize|large|研究課題}}'''
+{{div col|cols=3}}
+* [[フレーム問題]]
+* [[シンボルグラウンディング問題]]
+* [[オントロジー (情報科学)]]
+{{div col end}}
+
+'''{{fontsize|large|関連分野}}'''
+{{div col|cols=3}}
+* [[機械学習]]
+* [[自然言語処理]]
+* [[最適化問題]]
+* [[計算論的神経科学]]
+* [[ソフトウェアエージェント]]
+* [[CD理論]]
+* [[進化経済学]]
+* [[コンピュータゲームにおける人工知能]]
+** [[コンピュータチェス]] - [[コンピュータ将棋]] - [[コンピュータ囲碁]] - [[コンピュータ麻雀]]
+* [[人工無脳]]
+* [[人工生命]] - [[人工意識]]- [[意識]]
+* [[認知科学]]
+* [[知識情報処理]]
+{{div col end}}
+
+'''{{fontsize|large|AIに関する哲学的項目}}'''
+{{div col|cols=3}}
+* [[技術的特異点]]
+* [[ポストヒューマン (人類進化)|ポストヒューマン]]
+* [[強いAIと弱いAI]]
+* [[ロボット工学三原則]]
+* [[知識表現]]
+* [[身体性]]
+{{div col end}}
+
+== 外部リンク ==
+*[https://www.ai-gakkai.or.jp/whatsai/ 人工知能のやさしい説明「What's AI」]
+*[https://archive.org/details/handbookofartific01barr/ 人工知能ハンドブック]{{en icon}}
+*「[https://web.archive.org/web/20071011062703/http://philosophytalk.org/pastShows/ArtificialIntelligencePilot.htm {{lang|en|Can Machine Think?}}]」{{en icon}} - ラジオ番組「フィロソフィー・トーク」のバックナンバー。テーマ：「機械は考えられるのか？」 ゲスト：ジョン・サール、ジョン・マッカーシー、59分08秒。
+{{ソフトウェア工学}}
+{{コンピュータ科学}}
+{{Engineering fields}}
+{{新技術|topics=yes|infocom=yes}}{{Normdaten}}
+{{デフォルトソート:しんこうちのう}}
+[[Category:人工知能|*]]
+[[Category:計算機科学]]
+[[Category:情報工学]]
+[[Category:工業]]
+[[Category:工学]]
+[[Category:エンジニアリング]]
+[[Category:プログラミング]]
+[[Category:情報通信業]]
+[[Category:研究開発]]
+[[Category:研究の計算分野]]
+[[Category:計算論的神経科学]]
+[[Category:サイバネティックス]]
+[[Category:コンピュータのユーザインタフェース]]
+[[Category:新技術]]
+[[Category:形式科学]]
+[[Category:計算機科学の未解決問題]]
+[[Category:科学技術の倫理]]
+[[Category:心の哲学]]
